@@ -12,7 +12,6 @@ export default withMermaid(
     ignoreDeadLinks: [
       /^\/controls\/a-\d+-\d+$/,
       /^\/requirements\/\d+-\d+(-\d+)?$/,
-      /^\/isms\//,
       /^\/controls$/
     ],
 
