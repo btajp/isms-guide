@@ -1,0 +1,33 @@
+{
+  "name": "isms-guide",
+  "version": "1.0.0",
+  "description": "ISO/IEC 27001:2022 ISMS Guide - VitePress documentation site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "isms",
+    "iso27001",
+    "security",
+    "documentation"
+  ],
+  "author": "btajp",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitest/coverage-v8": "^4.0.18",
+    "mermaid": "^11.12.2",
+    "vitepress": "^1.6.4",
+    "vitepress-plugin-mermaid": "^2.0.17",
+    "vitest": "^4.0.18",
+    "wrangler": "^4.60.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
