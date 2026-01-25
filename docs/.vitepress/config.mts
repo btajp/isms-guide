@@ -37,6 +37,7 @@ export default withMermaid(
         { text: 'Home', link: '/' },
         { text: '要求事項', link: '/requirements/' },
         { text: '管理策', link: '/controls/' },
+        { text: 'テンプレート', link: '/templates/' },
         { text: '用語集', link: '/glossary/' }
       ],
 
@@ -99,6 +100,15 @@ export default withMermaid(
             text: '用語集',
             items: [
               { text: '用語一覧', link: '/glossary/' }
+            ]
+          }
+        ],
+        '/templates/': [
+          {
+            text: 'テンプレート',
+            items: [
+              { text: 'テンプレート一覧', link: '/templates/' },
+              { text: 'フォーク利用ガイド', link: '/templates/fork-guide' }
             ]
           }
         ],
