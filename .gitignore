@@ -27,3 +27,6 @@ npm-debug.log*
 .env.local
 .env.*.local
 node_modules
+
+# Private files
+private/
