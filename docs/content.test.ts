@@ -133,4 +133,41 @@ describe('Content Structure', () => {
       expect(content).toContain('./a-8-8')
     })
   })
+
+  describe('Copyright Section', () => {
+    it('should have about/copyright.md', () => {
+      expect(existsSync(resolve(docsDir, 'about/copyright.md'))).toBe(true)
+    })
+
+    it('should have required copyright statements in copyright.md', () => {
+      const content = readFileSync(resolve(docsDir, 'about/copyright.md'), 'utf-8')
+      expect(content).toContain('JISC')
+      expect(content).toContain('ISO')
+      expect(content).toContain('ISO/IEC 27001:2022')
+      expect(content).toContain('購入')
+      expect(content).toContain('流用ではない')
+      expect(content).toContain('引用の対象外')
+    })
+
+    it('should have JISC response quote', () => {
+      const content = readFileSync(resolve(docsDir, 'about/copyright.md'), 'utf-8')
+      expect(content).toContain('ご自身の言葉で概要や要約等を作成される場合には')
+    })
+
+    it('should have copyright section in index.md', () => {
+      const content = readFileSync(resolve(docsDir, 'index.md'), 'utf-8')
+      expect(content).toContain('本サイトのコンテンツについて')
+    })
+
+    it('should have link to copyright detail page in index.md', () => {
+      const content = readFileSync(resolve(docsDir, 'index.md'), 'utf-8')
+      expect(content).toContain('/about/copyright')
+    })
+
+    it('should have links to official standard sources', () => {
+      const content = readFileSync(resolve(docsDir, 'about/copyright.md'), 'utf-8')
+      expect(content).toContain('iso.org')
+      expect(content).toContain('jsa.or.jp')
+    })
+  })
 })

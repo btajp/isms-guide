@@ -101,6 +101,14 @@ export default withMermaid(
               { text: '用語一覧', link: '/glossary/' }
             ]
           }
+        ],
+        '/about/': [
+          {
+            text: 'サイトについて',
+            items: [
+              { text: '著作権・出典', link: '/about/copyright' }
+            ]
+          }
         ]
       },
 
@@ -145,7 +153,7 @@ export default withMermaid(
 
       // Footer
       footer: {
-        message: 'MIT License',
+        message: 'MIT License | <a href="/about/copyright">著作権・出典について</a>',
         copyright: 'Copyright 2024 btajp'
       },
 
