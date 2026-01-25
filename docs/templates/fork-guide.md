@@ -29,13 +29,13 @@ cd isms-guide
 
 ```bash
 # 組織名の置換
-find isms -name "*.md" -exec sed -i '' 's/{{組織名}}/株式会社サンプル/g' {} \;
+find docs/isms -name "*.md" -exec sed -i '' 's/{{組織名}}/株式会社サンプル/g' {} \;
 
 # ISMS責任者の置換
-find isms -name "*.md" -exec sed -i '' 's/{{ISMS責任者}}/情報セキュリティ管理者/g' {} \;
+find docs/isms -name "*.md" -exec sed -i '' 's/{{ISMS責任者}}/情報セキュリティ管理者/g' {} \;
 
 # 発効日の置換
-find isms -name "*.md" -exec sed -i '' 's/{{発効日}}/2025-04-01/g' {} \;
+find docs/isms -name "*.md" -exec sed -i '' 's/{{発効日}}/2025-04-01/g' {} \;
 ```
 
 ### 2.2 主要プレースホルダー一覧
@@ -52,7 +52,7 @@ find isms -name "*.md" -exec sed -i '' 's/{{発効日}}/2025-04-01/g' {} \;
 
 ### 3.1 ISMS マニュアル
 
-`isms/manual/isms-manual.md` を開き、以下を設定：
+`docs/isms/manual/isms-manual.md` を開き、以下を設定：
 
 1. **適用範囲**: 組織の ISMS 適用範囲を具体的に記載
 2. **組織図**: 自組織の情報セキュリティ体制を反映
@@ -60,14 +60,14 @@ find isms -name "*.md" -exec sed -i '' 's/{{発効日}}/2025-04-01/g' {} \;
 
 ### 3.2 情報セキュリティ方針
 
-`isms/policies/information-security-policy.md` を確認：
+`docs/isms/policies/information-security-policy.md` を確認：
 
 1. **経営者のコミットメント**: 経営層の署名欄を設定
 2. **方針の内容**: 組織の戦略・目標に合わせて調整
 
 ### 3.3 適用宣言書
 
-`isms/soa/statement-of-applicability.md` は最重要文書です：
+`docs/isms/soa/statement-of-applicability.md` は最重要文書です：
 
 1. 93 の管理策それぞれについて適用/除外を決定
 2. 除外する場合は正当な理由を記載
@@ -75,7 +75,7 @@ find isms -name "*.md" -exec sed -i '' 's/{{発効日}}/2025-04-01/g' {} \;
 
 ## Step 4: 記録テンプレートの準備
 
-`isms/records/` 配下の記録テンプレートは、運用開始後に使用します。
+`docs/isms/records/` 配下の記録テンプレートは、運用開始後に使用します。
 
 ### 運用開始前の準備
 
@@ -167,14 +167,14 @@ ISO/IEC 27001:2022 箇条 7.5 に基づき、以下を確保：
 
 ```bash
 # 未置換のプレースホルダーを検索
-grep -r '{{' isms/
+grep -r '{{' docs/isms/
 ```
 
 ### Q: 内部リンクが壊れている
 
 ```bash
 # リンク先ファイルの存在確認
-find isms -name "*.md" -exec grep -l '\[.*\](.*.md)' {} \;
+find docs/isms -name "*.md" -exec grep -l '\[.*\](.*.md)' {} \;
 ```
 
 ### Q: フロントマターのエラー
