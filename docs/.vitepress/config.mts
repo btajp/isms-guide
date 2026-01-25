@@ -153,8 +153,8 @@ export default withMermaid(
 
       // Footer
       footer: {
-        message: 'MIT License | <a href="/about/copyright">著作権・出典について</a>',
-        copyright: 'Copyright 2024 btajp'
+        message: '<a href="https://github.com/btajp/isms-guide/blob/main/LICENSE">MIT / CC0 Dual License</a> | <a href="/about/copyright">著作権・出典について</a>',
+        copyright: 'Copyright 2026 <a href="https://btajp.org">BTAJP</a>'
       },
 
       // Edit link
