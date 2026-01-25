@@ -14,6 +14,8 @@ status: "draft"
 
 # 適用宣言書（Statement of Applicability）
 
+> 関連: [箇条 6.1.3 d) 適用宣言書](/requirements/6-1-3)、[管理策一覧](/controls/)
+
 ## 1. 目的
 
 本書は、{{組織名}}の ISMS において、ISO/IEC 27001:2022 附属書 A に規定された 93 項目の管理策について、適用の有無及びその理由を宣言することを目的とする。
