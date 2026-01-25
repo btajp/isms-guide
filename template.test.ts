@@ -27,9 +27,9 @@ describe('ISMS Template Structure', () => {
     })
   })
 
-  describe('README', () => {
-    it('should have docs/isms/README.md', () => {
-      expect(existsSync(resolve(rootDir, 'docs/isms/README.md'))).toBe(true)
+  describe('Index', () => {
+    it('should have docs/isms/index.md', () => {
+      expect(existsSync(resolve(rootDir, 'docs/isms/index.md'))).toBe(true)
     })
   })
 

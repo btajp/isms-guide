@@ -44,8 +44,8 @@ describe('ISMS Templates - Directory Structure', () => {
     expect(existsSync(dirPath), `${dir}/ should exist`).toBe(true)
   })
 
-  it('should have README.md', () => {
-    expect(existsSync(resolve(ismsDir, 'README.md'))).toBe(true)
+  it('should have index.md', () => {
+    expect(existsSync(resolve(ismsDir, 'index.md'))).toBe(true)
   })
 })
 
@@ -254,14 +254,14 @@ describe('ISMS Templates - Document Structure', () => {
   })
 })
 
-describe('ISMS Templates - README', () => {
+describe('ISMS Templates - Index', () => {
   it('should have overview section', () => {
-    const content = readTemplate('README.md')
+    const content = readTemplate('index.md')
     expect(content).toContain('概要')
   })
 
   it('should list all template categories', () => {
-    const content = readTemplate('README.md')
+    const content = readTemplate('index.md')
     expect(content).toContain('manual')
     expect(content).toContain('policies')
     expect(content).toContain('procedures')
@@ -269,7 +269,7 @@ describe('ISMS Templates - README', () => {
   })
 
   it('should have usage instructions', () => {
-    const content = readTemplate('README.md')
+    const content = readTemplate('index.md')
     expect(content).toMatch(/使い方|利用方法|使用方法/)
   })
 })
