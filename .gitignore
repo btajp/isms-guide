@@ -30,3 +30,5 @@ node_modules
 
 # Private files
 private/
+PLAN-EXPORT.md
+.envrc
