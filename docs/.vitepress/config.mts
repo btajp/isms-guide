@@ -284,6 +284,11 @@ export default withMermaid(
         copyright: '&copy; 2026 <a href="https://btajp.org">Business Technology Association Japan</a>'
       },
 
+      // Social links
+      socialLinks: [
+        { icon: 'github', link: 'https://github.com/btajp/isms-guide' }
+      ],
+
       // Edit link
       editLink: {
         pattern: 'https://github.com/btajp/isms-guide/edit/main/docs/:path',
