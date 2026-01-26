@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50">
+  <defs>
+    <linearGradient id="shieldGradient-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shieldGradient-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <g>
+    <path class="shield-light" d="M25 0 L45 10 L45 30 C45 45 25 50 25 50 C25 50 5 45 5 30 L5 10 L25 0 Z" fill="url(#shieldGradient-light)" />
+    <path class="shield-dark" d="M25 0 L45 10 L45 30 C45 45 25 50 25 50 C25 50 5 45 5 30 L5 10 L25 0 Z" fill="url(#shieldGradient-dark)" display="none" />
+    <path d="M25 10 L35 30 L25 40 L15 30 L25 10 Z" fill="#ffffff" />
+    <path d="M25 15 L30 30 L25 35 L20 30 L25 15 Z" class="accent-color" fill="#047857" />
+    <circle cx="25" cy="30" r="2" fill="#ffffff" />
+  </g>
+  <style>
+    /* ダークモード時のスタイル適用 */
+    @media (prefers-color-scheme: dark) {
+      .shield-light { display: none; }
+      .shield-dark { display: inline; }
+      .accent-color { fill: #059669; }
+    }
+  </style>
+</svg>

@@ -29,7 +29,7 @@ export default withMermaid(
 
     // Head meta tags
     head: [
-      ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+      ['meta', { name: 'theme-color', content: '#10b981' }],
       ['meta', { property: 'og:type', content: 'website' }],
       ['meta', { property: 'og:locale', content: 'ja_JP' }],
       ['meta', { property: 'og:site_name', content: 'ISMS Guide' }],
@@ -43,6 +43,10 @@ export default withMermaid(
 
     // Theme configuration
     themeConfig: {
+      // Logo
+      logo: '/isms_guide_logo.svg',
+      siteTitle: false,
+
       // Navigation
       nav: [
         { text: 'Home', link: '/' },
