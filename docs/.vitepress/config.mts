@@ -107,7 +107,8 @@ export default withMermaid(
             text: 'テンプレート',
             items: [
               { text: 'テンプレート一覧', link: '/templates/' },
-              { text: 'フォーク利用ガイド', link: '/templates/fork-guide' }
+              { text: 'フォーク利用ガイド', link: '/templates/fork-guide' },
+              { text: '仮想組織の設定', link: '/templates/virtual-organization' }
             ]
           }
         ],
