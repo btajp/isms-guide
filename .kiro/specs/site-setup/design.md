@@ -49,7 +49,9 @@ isms-guide/
 │   ├── .vitepress/
 │   │   ├── config.mts           # VitePress 設定
 │   │   ├── theme/
-│   │   │   └── index.ts         # カスタムテーマ（必要時）
+│   │   │   ├── index.ts         # カスタムテーマエントリー
+│   │   │   ├── Layout.vue       # カスタムレイアウト（フッター全ページ表示）
+│   │   │   └── custom.css       # カスタムスタイル
 │   │   └── cache/               # ビルドキャッシュ（gitignore）
 │   │
 │   ├── index.md                 # トップページ
@@ -59,8 +61,8 @@ isms-guide/
 │   ├── controls/                # 管理策解説
 │   │   ├── index.md             # Annex A 93項目一覧
 │   │   └── a-5-23.md            # 詳細ページ
-│   ├── glossary/                # 用語集
-│   │   └── index.md
+│   ├── glossary/                # 用語集（あいうえお順 + アルファベット順）
+│   │   └── index.md             # 日本語ベース、略語はアルファベットセクション
 │   └── public/                  # 静的アセット
 │       ├── favicon.ico
 │       └── og-image.png
@@ -223,18 +225,26 @@ export default withMermaid(
         }
       },
 
-      socialLinks: [
-        { icon: 'github', link: 'https://github.com/btajp/isms-guide' }
-      ],
-
-      footer: {
-        message: 'Released under the MIT License.',
-        copyright: 'Copyright 2026 BTAJ Corporation'
-      },
-
       outline: {
         level: [2, 3],
         label: '目次'
+      },
+
+      footer: {
+        message: '<a href="https://github.com/btajp/isms-guide/blob/main/LICENSE">MIT</a> / <a href="https://github.com/btajp/isms-guide/blob/main/LICENSE">CC BY-NC 4.0</a> | <a href="/about/copyright">著作権・出典について</a>',
+        copyright: '&copy; 2026 <a href="https://btajp.org">Business Technology Association Japan</a>'
+      },
+
+      editLink: {
+        pattern: 'https://github.com/btajp/isms-guide/edit/main/docs/:path',
+        text: 'このページを編集する'
+      },
+
+      lastUpdated: {
+        text: '最終更新日',
+        formatOptions: {
+          dateStyle: 'long'
+        }
       },
 
       darkModeSwitchLabel: 'テーマ',
@@ -257,6 +267,80 @@ export default withMermaid(
     }
   })
 )
+```
+
+### docs/.vitepress/theme/index.ts
+
+カスタムテーマのエントリーポイント。デフォルトテーマを拡張し、カスタムレイアウトとスタイルを適用。
+
+```typescript
+import DefaultTheme from 'vitepress/theme'
+import Layout from './Layout.vue'
+import './custom.css'
+
+export default {
+  extends: DefaultTheme,
+  Layout
+}
+```
+
+### docs/.vitepress/theme/Layout.vue
+
+全ページにフッターを表示するためのカスタムレイアウト。VitePress の `layout-bottom` スロットを使用。
+
+```vue
+<script setup lang="ts">
+import DefaultTheme from 'vitepress/theme'
+import { useData } from 'vitepress'
+
+const { Layout } = DefaultTheme
+const { theme } = useData()
+</script>
+
+<template>
+  <Layout>
+    <template #layout-bottom>
+      <footer class="custom-footer">
+        <div class="footer-content">
+          <p class="footer-message" v-html="theme.footer?.message"></p>
+          <p class="footer-copyright" v-html="theme.footer?.copyright"></p>
+        </div>
+      </footer>
+    </template>
+  </Layout>
+</template>
+
+<style scoped>
+.custom-footer {
+  padding: 24px;
+  background-color: var(--vp-c-bg);
+}
+
+.footer-content {
+  max-width: 688px;
+  margin: 0 auto;
+  border-top: 1px solid var(--vp-c-divider);
+  padding-top: 24px;
+  text-align: center;
+}
+</style>
+```
+
+### docs/.vitepress/theme/custom.css
+
+カスタムスタイル。ブランドカラーの設定とデフォルトフッターの非表示。
+
+```css
+:root {
+  --vp-c-brand-1: #10b981;
+  --vp-c-brand-2: #059669;
+  --vp-c-brand-3: #047857;
+}
+
+/* デフォルトVitePressフッターを非表示（カスタムフッターを使用） */
+.VPFooter {
+  display: none !important;
+}
 ```
 
 ### .github/workflows/deploy.yml
