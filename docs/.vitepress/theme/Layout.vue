@@ -21,15 +21,28 @@ const { theme } = useData()
 
 <style scoped>
 .custom-footer {
+  /* Full width positioning - break out of parent container */
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  /* Styling */
   border-top: 1px solid var(--vp-c-divider);
   padding: 24px;
   background-color: var(--vp-c-bg);
+
+  /* Ensure footer is above any overlapping elements */
+  z-index: 10;
 }
 
 .footer-content {
   max-width: 1152px;
   margin: 0 auto;
   text-align: center;
+  padding: 0 24px;
 }
 
 .footer-message {
