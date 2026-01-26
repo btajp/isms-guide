@@ -72,10 +72,15 @@ export default withMermaid(
             text: '組織的管理策 (詳細)',
             collapsed: true,
             items: [
+              { text: 'A.5.5 関係当局との連絡', link: '/controls/a-5-5' },
+              { text: 'A.5.6 専門組織との連絡', link: '/controls/a-5-6' },
               { text: 'A.5.7 脅威インテリジェンス', link: '/controls/a-5-7' },
+              { text: 'A.5.8 プロジェクトマネジメント', link: '/controls/a-5-8' },
               { text: 'A.5.23 クラウドサービス', link: '/controls/a-5-23' },
               { text: 'A.5.24 インシデント管理', link: '/controls/a-5-24' },
-              { text: 'A.5.30 ICT事業継続', link: '/controls/a-5-30' }
+              { text: 'A.5.30 ICT事業継続', link: '/controls/a-5-30' },
+              { text: 'A.5.33 記録の保護', link: '/controls/a-5-33' },
+              { text: 'A.5.37 操作手順書', link: '/controls/a-5-37' }
             ]
           },
           {
