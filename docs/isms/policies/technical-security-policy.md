@@ -14,6 +14,8 @@ status: "draft"
 # 技術的セキュリティ方針
 
 > 関連: [情報セキュリティ方針](./information-security-policy.md)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md)
+>
+> 関連管理策: [A.8 技術的管理策](/controls/#a-8-技術的管理策-34項目)
 
 ## 1. 目的
 
