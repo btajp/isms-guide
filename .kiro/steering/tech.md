@@ -28,10 +28,10 @@
 
 | 項目 | 技術 |
 |------|------|
-| ホスティング | GitHub Pages（または Cloudflare Pages） |
+| ホスティング | Cloudflare Pages |
 | ドメイン | isms-guide.jp（取得予定） |
 | バージョン管理 | GitHub |
-| CI/CD | GitHub Actions |
+| CI/CD | Cloudflare Pages（GitHub連携による自動デプロイ） |
 
 ## Git & ISMS Compatibility
 

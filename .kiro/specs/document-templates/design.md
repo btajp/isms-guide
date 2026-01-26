@@ -3,7 +3,7 @@
 ## Architecture Overview
 
 ```
-isms/                           # フォーク対象ルート
+docs/isms/                      # フォーク対象（サイト上でも閲覧可能）
 ├── README.md                   # 利用ガイド（概要）
 ├── manual/                     # ISMS マニュアル
 │   └── isms-manual.md
@@ -30,6 +30,7 @@ isms/                           # フォーク対象ルート
 └── records/                    # 記録テンプレート
     ├── training-record.md
     ├── risk-assessment-report.md
+    ├── monitoring-measurement-record.md
     ├── internal-audit-report.md
     ├── management-review-minutes.md
     ├── incident-report.md
@@ -145,6 +146,21 @@ status: "draft"             # draft | approved | obsolete
 | `{{発効日}}` | 文書の発効日 | 2026-04-01 |
 | `{{レビュー日}}` | 次回レビュー日 | 2027-04-01 |
 
+### VitePress 対応
+
+VitePress は `{{ }}` を Vue の interpolation として解釈するため、プレースホルダーを含むセクションは `<div v-pre>` でラップする：
+
+```markdown
+<div v-pre>
+
+| 項目 | 内容 |
+|------|------|
+| 組織名 | {{組織名}} |
+| 適用範囲 | {{適用範囲}} |
+
+</div>
+```
+
 ### 注釈形式
 
 ```markdown
@@ -168,16 +184,62 @@ graph LR
 
 ## Interfaces
 
-### 解説サイトとの連携
+### 解説サイトとの連携（テンプレート → 解説）
 
-テンプレートから解説ページへのリンク：
+テンプレートから解説ページへのリンクは、見出し内にインラインで配置：
 
 ```markdown
-> この文書は ISO 27001 箇条 6.1.2 に対応しています。
-> 詳細は [リスクアセスメント解説](/docs/requirements/#6-1-2) を参照してください。
+## 3. [リスクアセスメント](/requirements/6-1-2)プロセス
+
+<!-- または本文中に自然な形で -->
+本手順は [箇条 6.1.2](/requirements/6-1-2) の要求事項を満たすために...
 ```
 
-### 相互参照
+### 解説サイトとの連携（解説 → テンプレート）
+
+要求事項・管理策の解説ページからテンプレートへのバックリンク：
+
+- **配置位置**: 各項・節の見出し直後に配置（「要求事項の概要」の前）
+- **アンカーリンク**: テンプレート内の具体的なセクションへ直接リンク
+
+```markdown
+### 4.3 ISMSの適用範囲の決定 {#4-3}
+
+> **関連テンプレート**: [ISMSマニュアル - 2. 適用範囲](/isms/manual/isms-manual#2-適用範囲)
+
+**要求事項の概要**
+
+...
+```
+
+```markdown
+### 6.1.2 情報セキュリティリスクアセスメント {#6-1-2}
+
+> **関連テンプレート**:
+> - [リスクアセスメント手順](/isms/procedures/risk-assessment-procedure)
+> - [リスク台帳 - 3. リスク一覧](/isms/registers/risk-register#3-リスク一覧)
+> - [リスクアセスメント報告書](/isms/records/risk-assessment-report)
+
+**要求事項の概要**
+
+...
+```
+
+個別詳細ページでも同様に、ページ先頭のメタ情報の後に配置：
+
+```markdown
+# 6.1.2 情報セキュリティリスクアセスメント
+
+> **関連テンプレート**:
+> - [リスクアセスメント手順](/isms/procedures/risk-assessment-procedure) - 手順全体
+> - [リスク台帳](/isms/registers/risk-register#3-リスク一覧) - リスク一覧表
+> - [リスクアセスメント報告書](/isms/records/risk-assessment-report) - 報告書式
+
+## 概要
+...
+```
+
+### 相互参照（テンプレート間）
 
 文書間の参照形式：
 
@@ -193,11 +255,12 @@ graph LR
 
 テンプレート作成時のチェックリスト：
 
-- [ ] フロントマターが正しい YAML 形式
-- [ ] 必須フィールド（title, document_id, iso_clause）が存在
-- [ ] プレースホルダーが `{{}}` 形式で統一
-- [ ] 内部リンクが相対パスで記述
-- [ ] Markdown 構文エラーなし
+- [x] フロントマターが正しい YAML 形式
+- [x] 必須フィールド（title, document_id, iso_clause/iso_control）が存在
+- [x] プレースホルダーが `{{}}` 形式で統一
+- [x] プレースホルダーを含むセクションが `<div v-pre>` でラップ
+- [x] 内部リンクが相対パスで記述
+- [x] VitePress ビルドエラーなし
 
 ## Security Considerations
 
@@ -207,30 +270,23 @@ graph LR
 
 ## Migration Strategy
 
-### 既存構造からの移行
+### 完了した移行
 
-現在の計画構造：
+テンプレートを `/docs/isms/` に配置し、サイト上で閲覧可能にした：
 
 ```
-isms/
+docs/isms/
+├── README.md           # 利用ガイド
 ├── manual/
 ├── soa/
+├── policies/
 ├── procedures/
+├── plans/
+├── registers/
 └── records/
 ```
 
-拡張後の構造：
-
-```
-isms/
-├── manual/
-├── soa/
-├── policies/      # 新規追加
-├── procedures/
-├── plans/         # 新規追加
-├── registers/     # 新規追加
-└── records/
-```
+これにより、VitePress でビルドされたサイト上でテンプレートを直接閲覧でき、かつリポジトリをフォークしてカスタマイズできる。
 
 ## File Mapping
 

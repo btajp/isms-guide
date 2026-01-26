@@ -17,10 +17,13 @@ isms-guide/
 │   ├── controls/              # 管理策解説（Annex A 93項目）
 │   └── glossary/              # 用語集
 │
-├── isms/                      # フォーク対象テンプレート
+├── docs/isms/                 # フォーク対象テンプレート（サイト上でも閲覧可能）
 │   ├── manual/                # ISMSマニュアル
 │   ├── soa/                   # 適用宣言書（SoA）
+│   ├── policies/              # 方針文書
 │   ├── procedures/            # 手順書
+│   ├── plans/                 # 計画書
+│   ├── registers/             # 台帳・一覧
 │   └── records/               # 記録テンプレート
 │
 ├── guide/                     # フォーク・カスタマイズ手順
@@ -38,7 +41,21 @@ isms-guide/
 /controls                  # 管理策一覧（Annex A 93項目を1ページで網羅）
 ├── #a-5-1, ...           # ページ内アンカー
 └── /controls/a-5-23       # 詳細解説ページ（必要な管理策のみ）
+
+/isms/                     # テンプレート一覧
+├── /isms/manual/          # ISMSマニュアル
+├── /isms/policies/        # 方針文書
+├── /isms/procedures/      # 手順書
+├── /isms/plans/           # 計画書
+├── /isms/registers/       # 台帳・一覧
+├── /isms/records/         # 記録テンプレート
+└── /isms/soa/             # 適用宣言書
 ```
+
+### 相互リンク設計
+
+- テンプレート → 解説: 見出し内にインラインリンク（例: `## 3. [リスクアセスメント](/requirements/6-1-2)プロセス`）
+- 解説 → テンプレート: 「関連テンプレート」セクションにリンク一覧
 
 ## Fork Usage Image
 
@@ -47,13 +64,16 @@ isms-guide/
 ```
 社内リポジトリ: acme-corp/isms
 │
-├── /isms                  # 自社用にカスタマイズ
+├── /docs/isms             # 自社用にカスタマイズ
 │   ├── manual/            # 組織名・適用範囲を記入
 │   ├── soa/               # 適用/除外を記入
+│   ├── policies/          # 方針を自社用に編集
 │   ├── procedures/        # 自社手順に編集
+│   ├── plans/             # 計画書を自社用に編集
+│   ├── registers/         # 台帳に実データを追加
 │   └── records/           # 実際の記録を追加
 │
-└── GitHub Pages または社内サーバーで公開
+└── GitHub Pages または Cloudflare Pages で公開
 ```
 
 ## Naming Conventions
@@ -78,13 +98,14 @@ isms-guide/
 | Phase | 内容 | 状態 |
 |-------|------|:----:|
 | 1 | 解説コンテンツ作成 | 完了 |
-| 2 | サイト公開 | 現在 |
-| 3 | テンプレートコンテンツ作成 | 未着手 |
+| 2 | サイト公開（Cloudflare Pages） | 完了 |
+| 3 | テンプレートコンテンツ作成 | 完了 |
 | 4 | 代替形式（Notion等） | 将来 |
 
 ## Architecture Decisions
 
 - 単一リポジトリで解説サイトとテンプレートを管理
-- テンプレート部分（`/isms`）のみフォーク対象として設計
-- 静的サイトジェネレータで解説サイトを構築
-- GitHub Pages または Cloudflare Pages でホスティング
+- テンプレートは `/docs/isms/` に配置（サイト上で閲覧可能、かつフォーク対象）
+- 静的サイトジェネレータ（VitePress）で解説サイトを構築
+- Cloudflare Pages でホスティング
+- 解説コンテンツとテンプレート間で相互リンク（双方向参照）
