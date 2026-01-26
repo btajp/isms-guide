@@ -2,7 +2,7 @@
   <!-- Background - Clean white -->
   <rect width="1200" height="630" fill="#ffffff"/>
 
-  <!-- Footer bar (center only, taller) -->
+  <!-- Footer bar (center only) -->
   <rect x="285" y="505" width="630" height="125" fill="#f8fafb"/>
   <line x1="285" y1="505" x2="915" y2="505" stroke="#e8eef3" stroke-width="1"/>
 
@@ -23,25 +23,25 @@
   <rect x="907" y="0" width="8" height="630" fill="#3eaf7c"/>
 
   <!-- Site name - Large -->
-  <text x="600" y="160" font-family="sans-serif" font-size="56" font-weight="700" fill="#3eaf7c" text-anchor="middle">ISMS Guide</text>
+  <text x="600" y="140" font-family="sans-serif" font-size="56" font-weight="700" fill="#3eaf7c" text-anchor="middle">ISMS Guide</text>
 
   <!-- Subtitle -->
-  <text x="600" y="210" font-family="sans-serif" font-size="24" fill="#333333" text-anchor="middle">ISO/IEC 27001:2022 対応 ISMS 構築ガイド</text>
+  <text x="600" y="190" font-family="sans-serif" font-size="24" fill="#333333" text-anchor="middle">ISO/IEC 27001:2022 対応 ISMS 構築ガイド</text>
 
   <!-- Category badge -->
-  <rect x="480" y="245" width="240" height="50" rx="25" fill="#3eaf7c" fill-opacity="0.1"/>
-  <text x="600" y="280" font-family="sans-serif" font-size="28" font-weight="600" fill="#3eaf7c" text-anchor="middle">{{category}}</text>
+  <rect x="480" y="225" width="240" height="50" rx="25" fill="#3eaf7c" fill-opacity="0.1"/>
+  <text x="600" y="260" font-family="sans-serif" font-size="28" font-weight="600" fill="#3eaf7c" text-anchor="middle">{{category}}</text>
 
   <!-- Page title (multi-line) -->
-  <text x="600" y="370" font-family="sans-serif" font-size="48" font-weight="700" fill="#1a1a1a" text-anchor="middle">{{line1}}</text>
-  <text x="600" y="430" font-family="sans-serif" font-size="48" font-weight="700" fill="#1a1a1a" text-anchor="middle">{{line2}}</text>
-  <text x="600" y="485" font-family="sans-serif" font-size="48" font-weight="700" fill="#1a1a1a" text-anchor="middle">{{line3}}</text>
+  <text x="600" y="340" font-family="sans-serif" font-size="48" font-weight="700" fill="#1a1a1a" text-anchor="middle">{{line1}}</text>
+  <text x="600" y="395" font-family="sans-serif" font-size="48" font-weight="700" fill="#1a1a1a" text-anchor="middle">{{line2}}</text>
+  <text x="600" y="450" font-family="sans-serif" font-size="48" font-weight="700" fill="#1a1a1a" text-anchor="middle">{{line3}}</text>
 
   <!-- Footer line 1: URL -->
-  <text x="600" y="528" font-family="sans-serif" font-size="20" fill="#333333" text-anchor="middle">https://isms-guide.com</text>
+  <text x="600" y="538" font-family="sans-serif" font-size="20" fill="#333333" text-anchor="middle">https://isms-guide.com</text>
 
   <!-- Footer line 2: CC BY-NC 4.0 icons (official paths, 30px) -->
-  <g transform="translate(600, 560)">
+  <g transform="translate(587, 563)">
     <!-- CC logo (official, 30px) -->
     <g transform="translate(-108, -15)">
       <path d="M14.972 0c4.196 0 7.769 1.465 10.715 4.393A14.426 14.426 0 0128.9 9.228C29.633 11.04 30 12.964 30 15c0 2.054-.363 3.978-1.085 5.772a13.77 13.77 0 01-3.2 4.754 15.417 15.417 0 01-4.983 3.322A14.932 14.932 0 0114.973 30c-1.982 0-3.88-.38-5.692-1.14a15.087 15.087 0 01-4.875-3.293c-1.437-1.437-2.531-3.058-3.281-4.862A14.71 14.71 0 010 15c0-1.982.38-3.888 1.138-5.719a15.062 15.062 0 013.308-4.915C7.303 1.456 10.812 0 14.972 0zm.055 2.706c-3.429 0-6.313 1.196-8.652 3.589a12.896 12.896 0 00-2.72 4.031 11.814 11.814 0 00-.95 4.675c0 1.607.316 3.156.95 4.646a12.428 12.428 0 002.72 3.992 12.362 12.362 0 003.99 2.679c1.483.616 3.037.924 4.662.924 1.607 0 3.164-.312 4.675-.937a12.954 12.954 0 004.084-2.705c2.339-2.286 3.508-5.152 3.508-8.6 0-1.66-.304-3.231-.91-4.713a11.994 11.994 0 00-2.651-3.965c-2.412-2.41-5.314-3.616-8.706-3.616zm-.188 9.803l-2.01 1.045c-.215-.445-.477-.758-.79-.937-.312-.178-.602-.268-.87-.268-1.34 0-2.01.884-2.01 2.652 0 .803.17 1.446.509 1.928.34.482.84.724 1.5.724.876 0 1.492-.43 1.85-1.286l1.847.937a4.407 4.407 0 01-1.634 1.728c-.696.42-1.464.63-2.303.63-1.34 0-2.42-.41-3.242-1.233-.821-.82-1.232-1.964-1.232-3.428 0-1.428.416-2.562 1.246-3.401.83-.84 1.879-1.26 3.147-1.26 1.858 0 3.188.723 3.992 2.17zm8.652 0l-1.983 1.045c-.214-.445-.478-.758-.79-.937-.313-.178-.613-.268-.897-.268-1.34 0-2.01.884-2.01 2.652 0 .803.17 1.446.51 1.928.338.482.838.724 1.5.724.874 0 1.49-.43 1.847-1.286l1.875.937a4.606 4.606 0 01-1.66 1.728c-.696.42-1.455.63-2.277.63-1.357 0-2.441-.41-3.253-1.233-.814-.82-1.22-1.964-1.22-3.428 0-1.428.415-2.562 1.246-3.401.83-.84 1.879-1.26 3.147-1.26 1.857 0 3.18.723 3.965 2.17z" fill="#333333"/>
@@ -58,7 +58,7 @@
     </g>
 
     <!-- Text label -->
-    <text x="0" y="5" font-family="sans-serif" font-size="18" font-weight="600" fill="#333333">CC BY-NC 4.0</text>
+    <text x="0" y="7" font-family="sans-serif" font-size="18" font-weight="600" fill="#333333">CC BY-NC 4.0</text>
   </g>
 
   <!-- Footer line 3: Copyright -->
