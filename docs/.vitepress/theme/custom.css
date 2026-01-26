@@ -1,3 +1,6 @@
+/* Import Montserrat font for hero name */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 :root {
   --vp-c-brand-1: #10b981;
   --vp-c-brand-2: #059669;
@@ -26,10 +29,57 @@
 
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+  /* ISMS: #059669 (0-45%), Guide: #10B981 (45-100%) */
+  --vp-home-hero-name-background: linear-gradient(90deg, #059669 0%, #059669 45%, #10B981 45%, #10B981 100%);
 }
 
 /* Hide default VitePress footer to use custom footer on all pages */
 .VPFooter {
   display: none !important;
+}
+
+/* Hero section: responsive top padding */
+.VPHero {
+  padding-top: 100px !important;
+}
+
+@media (max-width: 960px) {
+  .VPHero {
+    padding-top: 80px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .VPHero {
+    padding-top: 60px !important;
+  }
+}
+
+/* Hero name: Montserrat Bold */
+.VPHero .name {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+/* Hero text (ISO/IEC 27001:2022 対応): prevent line break */
+.VPHero .text {
+  white-space: nowrap;
+  font-size: clamp(24px, 4vw, 48px) !important;
+}
+
+/* Hero tagline (情報セキュリティマネジメントシステム構築ガイド): prevent line break */
+.VPHero .tagline {
+  white-space: nowrap;
+  font-size: clamp(14px, 2.5vw, 24px) !important;
+  margin-top: -8px !important;
+}
+
+/* Mobile specific adjustments */
+@media (max-width: 640px) {
+  .VPHero .text {
+    font-size: 20px !important;
+  }
+  .VPHero .tagline {
+    font-size: 12px !important;
+  }
 }
