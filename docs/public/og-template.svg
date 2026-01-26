@@ -25,8 +25,8 @@
   <line x1="0" y1="540" x2="1200" y2="540" stroke="#e8eef3" stroke-width="1"/>
 
   <!-- Footer text -->
-  <text x="90" y="595" font-family="sans-serif" font-size="24" fill="#6b7280">ISO/IEC 27001:2022</text>
-  <text x="1110" y="595" font-family="sans-serif" font-size="24" fill="#9ca3af" text-anchor="end">isms-guide.com</text>
+  <text x="90" y="595" font-family="sans-serif" font-size="22" fill="#6b7280">ISO/IEC 27001:2022 対応 ISMS 構築ガイド</text>
+  <text x="1110" y="595" font-family="sans-serif" font-size="22" fill="#9ca3af" text-anchor="end">isms-guide.com</text>
 
   <!-- Decorative elements -->
   <circle cx="1080" cy="140" r="100" fill="#3eaf7c" fill-opacity="0.04"/>
