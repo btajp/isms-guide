@@ -84,6 +84,13 @@ export default withMermaid(
             ]
           },
           {
+            text: '人的管理策 (詳細)',
+            collapsed: true,
+            items: [
+              { text: 'A.6.1 選考', link: '/controls/a-6-1' }
+            ]
+          },
+          {
             text: '物理的管理策 (詳細)',
             collapsed: true,
             items: [
