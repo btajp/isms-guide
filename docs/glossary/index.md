@@ -1,4 +1,5 @@
 ---
+title: "用語集"
 prev: false
 next: false
 ---
