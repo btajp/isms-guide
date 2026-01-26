@@ -28,3 +28,8 @@
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: linear-gradient(135deg, #10b981 0%, #047857 100%);
 }
+
+/* Hide default VitePress footer to use custom footer on all pages */
+.VPFooter {
+  display: none !important;
+}
