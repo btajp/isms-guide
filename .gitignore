@@ -33,3 +33,6 @@ private/
 PLAN-EXPORT.md
 .envrc
 PLAN.md
+
+# Workspace
+*.code-workspace
