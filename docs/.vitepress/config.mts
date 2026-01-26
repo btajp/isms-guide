@@ -52,6 +52,7 @@ export default withMermaid(
         { text: 'Home', link: '/' },
         { text: '要求事項', link: '/requirements/' },
         { text: '管理策', link: '/controls/' },
+        { text: 'ブログ', link: '/blog/' },
         { text: 'テンプレート', link: '/templates/' },
         { text: '用語集', link: '/glossary/' }
       ],
@@ -245,6 +246,14 @@ export default withMermaid(
               { text: '著作権・出典', link: '/about/copyright' }
             ]
           }
+        ],
+        '/blog/': [
+          {
+            text: 'ブログ',
+            items: [
+              { text: '記事一覧', link: '/blog/' }
+            ]
+          }
         ]
       },
 
@@ -315,6 +324,7 @@ export default withMermaid(
       lightModeSwitchTitle: 'ライトモードに切り替え',
       darkModeSwitchTitle: 'ダークモードに切り替え'
     },
+
 
     // Mermaid configuration
     mermaid: {
@@ -389,6 +399,7 @@ export default withMermaid(
             { prefix: 'isms/registers', text: '台帳' },
             { prefix: 'isms/soa', text: '適用宣言書' },
             { prefix: 'isms/manual', text: 'マニュアル' },
+            { prefix: 'blog', text: 'ブログ' },
           ],
         },
         maxCharactersPerLine: 12,
