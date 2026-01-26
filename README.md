@@ -32,6 +32,47 @@ ISMS Guide は、ISMS 認証取得を目指す組織向けの日本語ドキュ�
 
 コンテンツは著作権表示なしで自由にご利用いただけます。
 
+## 利用方法
+
+### 公開サイトを利用する
+
+https://isms-guide.com にアクセスしてください。
+
+### 社内サイトとして利用する
+
+本リポジトリをフォークして、自組織向けにカスタマイズした ISMS ドキュメントサイトを構築できます。
+
+```bash
+# リポジトリをフォーク後、クローン
+git clone https://github.com/your-org/isms-guide.git
+cd isms-guide
+
+# 依存関係のインストール
+npm install
+
+# テンプレート内のプレースホルダーを組織情報に置換
+# {{組織名}}、{{ISMS責任者}} などを編集
+
+# ローカルで確認
+npm run dev
+
+# ビルド
+npm run build
+```
+
+#### 社内限定サイトとしてデプロイ
+
+認証付きの社内向けサイトとして公開することで、ISMS 文書を安全に共有できます。
+
+| サービス | 認証方法 | 特徴 |
+|----------|----------|------|
+| **Cloudflare Pages + Zero Trust Access** | IdP連携（Google, Okta, Azure AD等） | 無料枠あり、グローバルCDN |
+| **AWS Amplify + Cognito** | Cognito User Pool, SAML, OIDC | AWS エコシステムとの統合 |
+| **Vercel + Auth0** | Auth0 によるIdP連携 | シンプルな設定 |
+| **Azure Static Web Apps + Azure AD** | Azure AD | Microsoft 365 環境との親和性 |
+
+いずれの方法でも、ビルド成果物（`docs/.vitepress/dist`）を静的ホスティングし、その前段で認証を設定します。
+
 ## ローカル開発
 
 ```bash
