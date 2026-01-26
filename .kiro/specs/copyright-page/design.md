@@ -98,12 +98,12 @@ sidebar: {
 }
 ```
 
-### フッター更新（任意）
+### フッター更新（実装済み）
 
 ```typescript
 footer: {
-  message: 'MIT License | <a href="/about/copyright">著作権について</a>',
-  copyright: 'Copyright 2024 btajp'
+  message: '<a href="https://github.com/btajp/isms-guide/blob/main/LICENSE">MIT</a> / <a href="https://github.com/btajp/isms-guide/blob/main/LICENSE">CC BY-NC 4.0</a> | <a href="/about/copyright">著作権・出典について</a>',
+  copyright: '&copy; 2026 <a href="https://btajp.org">Business Technology Association Japan</a>'
 }
 ```
 

@@ -2,29 +2,29 @@
 
 ## Phase 1: ディレクトリ・基盤準備
 
-- [ ] **Task 1.1**: `docs/isms/guidelines/` ディレクトリを作成
+- [x] **Task 1.1**: `docs/isms/guidelines/` ディレクトリを作成
   - _Requirements: FR-4_
 
-- [ ] **Task 1.2**: `docs/isms/guidelines/index.md` を作成
+- [x] **Task 1.2**: `docs/isms/guidelines/index.md` を作成
   - ガイドライン一覧ページ
   - 方針との関係を説明
   - _Requirements: FR-4_
 
 ## Phase 2: 従業員向けセキュリティガイドライン
 
-- [ ] **Task 2.1**: `employee-security-guideline.md` のフロントマター・基本構造を作成
+- [x] **Task 2.1**: `employee-security-guideline.md` のフロントマター・基本構造を作成
   - _Requirements: AC-1.1, AC-1.2, AC-1.3, AC-1.4, AC-1.5_
 
-- [ ] **Task 2.2**: セクション 1-2（目的・適用範囲）を作成
+- [x] **Task 2.2**: セクション 1-2（目的・適用範囲）を作成
   - _Requirements: AC-1.1_
 
-- [ ] **Task 2.3**: セクション 3（入社時のセキュリティ責任）を作成
+- [x] **Task 2.3**: セクション 3（入社時のセキュリティ責任）を作成
   - 秘密保持義務（A.6.6）
   - セキュリティ教育の受講（A.6.3）
   - 利用規約への同意（A.6.2）
   - _Requirements: AC-1.1_
 
-- [ ] **Task 2.4**: セクション 4（在職中の遵守事項）を作成
+- [x] **Task 2.4**: セクション 4（在職中の遵守事項）を作成
   - 情報の取扱い（A.5.12, A.5.13, A.5.14）
   - パスワード管理（A.5.17）
   - クリアデスク・クリアスクリーン（A.7.7）
@@ -34,43 +34,43 @@
   - 構外での資産管理（A.7.9）
   - _Requirements: AC-1.2_
 
-- [ ] **Task 2.5**: セクション 5（セキュリティ事象の報告）を作成
+- [x] **Task 2.5**: セクション 5（セキュリティ事象の報告）を作成
   - 報告すべき事象
   - 報告方法
   - 報告後の対応
   - _Requirements: AC-1.4_
 
-- [ ] **Task 2.6**: セクション 6（退職・異動時の義務）を作成
+- [x] **Task 2.6**: セクション 6（退職・異動時の義務）を作成
   - 資産の返却（A.5.11）
   - アクセス権の返上
   - 継続する秘密保持義務（A.6.5）
   - _Requirements: AC-1.3_
 
-- [ ] **Task 2.7**: セクション 7-8（違反時の対応・関連文書）を作成
+- [x] **Task 2.7**: セクション 7-8（違反時の対応・関連文書）を作成
   - _Requirements: AC-1.5_
 
 ## Phase 3: 技術的セキュリティ方針
 
-- [ ] **Task 3.1**: `technical-security-policy.md` のフロントマター・基本構造を作成
+- [x] **Task 3.1**: `technical-security-policy.md` のフロントマター・基本構造を作成
   - _Requirements: AC-3.1, AC-3.2, AC-3.3, AC-3.4, AC-3.5_
 
-- [ ] **Task 3.2**: セクション 1-2（目的・適用範囲）を作成
+- [x] **Task 3.2**: セクション 1-2（目的・適用範囲）を作成
   - _Requirements: AC-3.5_
 
-- [ ] **Task 3.3**: セクション 3（暗号化方針）を作成
+- [x] **Task 3.3**: セクション 3（暗号化方針）を作成
   - 暗号化の原則
   - 暗号アルゴリズムの選定
   - 鍵管理
   - _Requirements: AC-3.1_
 
-- [ ] **Task 3.4**: セクション 4（ネットワークセキュリティ方針）を作成
+- [x] **Task 3.4**: セクション 4（ネットワークセキュリティ方針）を作成
   - ネットワーク保護の原則（A.8.20）
   - ネットワーク分離（A.8.22）
   - ネットワークサービスのセキュリティ（A.8.21）
   - ウェブフィルタリング（A.8.23）
   - _Requirements: AC-3.2_
 
-- [ ] **Task 3.5**: セクション 5（開発セキュリティ方針）を作成
+- [x] **Task 3.5**: セクション 5（開発セキュリティ方針）を作成
   - セキュア開発ライフサイクル（A.8.25）
   - セキュリティ要求事項（A.8.26）
   - セキュアアーキテクチャ原則（A.8.27）
@@ -79,30 +79,30 @@
   - 環境分離（A.8.31）
   - _Requirements: AC-3.3_
 
-- [ ] **Task 3.6**: セクション 6（変更管理方針）を作成
+- [x] **Task 3.6**: セクション 6（変更管理方針）を作成
   - 変更管理プロセス（A.8.32）
   - ソフトウェア導入（A.8.19）
   - _Requirements: AC-3.4_
 
-- [ ] **Task 3.7**: セクション 7-10（マルウェア・脆弱性・構成・ログ）を作成
+- [x] **Task 3.7**: セクション 7-10（マルウェア・脆弱性・構成・ログ）を作成
   - マルウェア対策方針（A.8.7）
   - 脆弱性管理方針（A.8.8）
   - 構成管理方針（A.8.9）
   - ログ・監視方針（A.8.15, A.8.16, A.8.17）
   - _Requirements: AC-3.5_
 
-- [ ] **Task 3.8**: セクション 11（関連文書・改訂履歴）を作成
+- [x] **Task 3.8**: セクション 11（関連文書・改訂履歴）を作成
   - _Requirements: AC-3.5_
 
 ## Phase 4: エンジニア向けセキュリティガイドライン
 
-- [ ] **Task 4.1**: `engineer-security-guideline.md` のフロントマター・基本構造を作成
+- [x] **Task 4.1**: `engineer-security-guideline.md` のフロントマター・基本構造を作成
   - _Requirements: AC-2.1, AC-2.2, AC-2.3, AC-2.4, AC-2.5, AC-2.6, AC-2.7_
 
-- [ ] **Task 4.2**: セクション 1-2（目的・適用範囲）を作成
+- [x] **Task 4.2**: セクション 1-2（目的・適用範囲）を作成
   - _Requirements: AC-2.1_
 
-- [ ] **Task 4.3**: セクション 3（アクセス管理）を作成
+- [x] **Task 4.3**: セクション 3（アクセス管理）を作成
   - 特権アクセスの管理（A.8.2）
   - 情報へのアクセス制限（A.8.3）
   - ソースコードへのアクセス（A.8.4）
@@ -110,7 +110,7 @@
   - 特権ユーティリティの使用（A.8.18）
   - _Requirements: AC-2.1_
 
-- [ ] **Task 4.4**: セクション 4（開発セキュリティ）を作成
+- [x] **Task 4.4**: セクション 4（開発セキュリティ）を作成
   - セキュア開発ライフサイクル（A.8.25）
   - セキュリティ要求事項の定義（A.8.26）
   - セキュアアーキテクチャ（A.8.27）
@@ -119,77 +119,77 @@
   - 外部委託開発の管理（A.8.30）
   - _Requirements: AC-2.2_
 
-- [ ] **Task 4.5**: セクション 5（環境管理）を作成
+- [x] **Task 4.5**: セクション 5（環境管理）を作成
   - 開発・テスト・本番環境の分離（A.8.31）
   - テストデータの管理（A.8.33）
   - 監査テスト時の保護（A.8.34）
   - _Requirements: AC-2.1_
 
-- [ ] **Task 4.6**: セクション 6（インフラセキュリティ）を作成
+- [x] **Task 4.6**: セクション 6（インフラセキュリティ）を作成
   - ネットワークセキュリティ（A.8.20, A.8.21, A.8.22）
   - ウェブフィルタリング（A.8.23）
   - 暗号化の実装（A.8.24）
   - _Requirements: AC-2.3, AC-2.4_
 
-- [ ] **Task 4.7**: セクション 7（運用セキュリティ）を作成
+- [x] **Task 4.7**: セクション 7（運用セキュリティ）を作成
   - 変更管理（A.8.32）
   - ソフトウェア導入（A.8.19）
   - 容量・能力の管理（A.8.6）
   - _Requirements: AC-2.5_
 
-- [ ] **Task 4.8**: セクション 8（保護対策）を作成
+- [x] **Task 4.8**: セクション 8（保護対策）を作成
   - マルウェア対策（A.8.7）
   - 脆弱性管理（A.8.8）
   - 構成管理（A.8.9）
   - データ漏えい防止（A.8.12）
   - _Requirements: AC-2.7_
 
-- [ ] **Task 4.9**: セクション 9（データ管理）を作成
+- [x] **Task 4.9**: セクション 9（データ管理）を作成
   - 情報の削除（A.8.10）
   - データマスキング（A.8.11）
   - _Requirements: AC-2.1_
 
-- [ ] **Task 4.10**: セクション 10（監視・ログ）を作成
+- [x] **Task 4.10**: セクション 10（監視・ログ）を作成
   - ログ取得の実装（A.8.15）
   - 監視の実装（A.8.16）
   - 時刻同期（A.8.17）
   - _Requirements: AC-2.6_
 
-- [ ] **Task 4.11**: セクション 11（セキュリティチェックリスト）を作成
+- [x] **Task 4.11**: セクション 11（セキュリティチェックリスト）を作成
   - 開発開始時チェックリスト
   - リリース前チェックリスト
   - 運用開始後チェックリスト
   - _Requirements: AC-2.1, AC-2.2_
 
-- [ ] **Task 4.12**: セクション 12（関連文書・改訂履歴）を作成
+- [x] **Task 4.12**: セクション 12（関連文書・改訂履歴）を作成
   - _Requirements: AC-2.1_
 
 ## Phase 5: 相互リンクの追加
 
-- [ ] **Task 5.1**: `controls/index.md` に関連テンプレートリンクを追加
+- [x] **Task 5.1**: `controls/index.md` に関連テンプレートリンクを追加
   - 従業員向けガイドラインに対応する管理策
   - 技術的セキュリティ方針に対応する管理策
   - エンジニア向けガイドラインに対応する管理策
   - _Requirements: FR-1, FR-2, FR-3_
 
-- [ ] **Task 5.2**: `soa/statement-of-applicability.md` の実装文書列を更新
+- [x] **Task 5.2**: `soa/statement-of-applicability.md` の実装文書列を更新
   - `-` になっている管理策に新規テンプレートへのリンクを追加
   - _Requirements: FR-1, FR-2, FR-3_
 
-- [ ] **Task 5.3**: `isms/index.md` にガイドラインセクションを追加
+- [x] **Task 5.3**: `isms/index.md` にガイドラインセクションを追加
   - _Requirements: FR-4_
 
 ## Phase 6: VitePress 設定・テスト
 
-- [ ] **Task 6.1**: VitePress sidebar 設定にガイドラインを追加
-  - `docs/.vitepress/config.ts` を更新
+- [x] **Task 6.1**: VitePress sidebar 設定にガイドラインを追加
+  - `docs/.vitepress/config.mts` を更新
   - _Requirements: FR-4_
 
-- [ ] **Task 6.2**: ビルドテスト
+- [x] **Task 6.2**: ビルドテスト
   - `npm run build` でエラーがないことを確認
   - _Requirements: NFR-1_
 
-- [ ] **Task 6.3**: テンプレートテスト
+- [x] **Task 6.3**: テンプレートテスト
   - 既存の `templates.test.ts` に新規テンプレートのテストを追加
   - フロントマター検証
   - プレースホルダー形式検証
@@ -197,26 +197,36 @@
 
 ## Testing Tasks
 
-- [ ] **Unit Tests**: テンプレートのフロントマター・構造検証
+- [x] **Unit Tests**: テンプレートのフロントマター・構造検証
   - フロントマターの必須フィールド存在確認
   - プレースホルダー形式の一貫性確認
   - `<div v-pre>` の適切な使用確認
   - _Requirements: NFR-1_
 
-- [ ] **Integration Tests**: VitePress ビルド検証
+- [x] **Integration Tests**: VitePress ビルド検証
   - ビルドエラーなし
   - 内部リンクが正しく解決される
   - _Requirements: NFR-1_
 
 ## Completion Criteria
 
-- [ ] 4つの新規テンプレートが作成されている
+- [x] 4つの新規テンプレートが作成されている
   - `guidelines/index.md`
   - `guidelines/employee-security-guideline.md`
   - `policies/technical-security-policy.md`
   - `guidelines/engineer-security-guideline.md`
-- [ ] 全テンプレートが既存のフォーマットと一貫している
-- [ ] controls/index.md から新規テンプレートへのリンクがある
-- [ ] 適用宣言書の実装文書列が更新されている
-- [ ] VitePress ビルドが成功する
-- [ ] テストが全てパスする
+- [x] 全テンプレートが既存のフォーマットと一貫している
+- [x] controls/index.md から新規テンプレートへのリンクがある
+- [x] 適用宣言書の実装文書列が更新されている
+- [x] VitePress ビルドが成功する
+- [x] テストが全てパスする
+
+## Completion Notes
+
+- 2026年1月: 全タスク完了
+- 4つのテンプレートを作成:
+  - `docs/isms/guidelines/index.md`
+  - `docs/isms/guidelines/employee-security-guideline.md`
+  - `docs/isms/guidelines/engineer-security-guideline.md`
+  - `docs/isms/policies/technical-security-policy.md`
+- VitePress sidebar に `/isms/guidelines/` セクションを追加
