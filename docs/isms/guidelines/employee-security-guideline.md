@@ -14,6 +14,8 @@ status: "draft"
 # 従業員向けセキュリティガイドライン
 
 > 関連方針: [情報セキュリティ方針](../policies/information-security-policy.md)、[情報の許容される利用方針](../policies/acceptable-use-policy.md)
+>
+> 関連管理策: [A.5 組織的管理策](/controls/#a-5-組織的管理策-37項目)、[A.6 人的管理策](/controls/#a-6-人的管理策-8項目)、[A.7 物理的管理策](/controls/#a-7-物理的管理策-14項目)、[A.8 技術的管理策](/controls/#a-8-技術的管理策-34項目)
 
 ## 1. 目的
 
