@@ -1,0 +1,79 @@
+name: "技術的な問題・改善"
+description: "サイト構築、ビルド、表示、機能に関するバグ報告や改善提案"
+labels: ["technical"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        技術的な問題のご報告ありがとうございます。
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: 種類
+      description: この Issue の種類を選択してください
+      options:
+        - バグ報告
+        - 機能改善の提案
+        - 新機能の提案
+        - パフォーマンス問題
+        - アクセシビリティ問題
+        - その他
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 該当領域
+      description: 問題が発生している領域を選択してください
+      options:
+        - VitePress / サイト表示
+        - ビルド / デプロイ
+        - 検索機能
+        - ナビゲーション / サイドバー
+        - レスポンシブ / モバイル表示
+        - Mermaid 図表
+        - CI / GitHub Actions
+        - その他
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 問題の説明
+      description: 発生している問題や提案内容を具体的に記載してください
+      placeholder: "〇〇のページで△△が表示されない..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: バグの場合、再現手順を記載してください（任意）
+      placeholder: |
+        1. 〇〇ページにアクセス
+        2. △△をクリック
+        3. エラーが発生
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待される動作
+      description: 本来どのように動作すべきかを記載してください（任意）
+      placeholder: "正常に△△が表示されるべき"
+    validations:
+      required: false
+
+  - type: input
+    id: environment
+    attributes:
+      label: 環境
+      description: ブラウザ、OS などの環境情報（任意）
+      placeholder: "例: Chrome 120 / macOS Sonoma"
+    validations:
+      required: false

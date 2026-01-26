@@ -1,0 +1,59 @@
+name: "コンテンツに関する報告・提案"
+description: "ドキュメント内容、テンプレート、解説の改善提案や誤りの報告"
+labels: ["content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        コンテンツに関するご報告・ご提案ありがとうございます。
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: 種類
+      description: この Issue の種類を選択してください
+      options:
+        - 誤字・脱字の報告
+        - 内容の誤りの報告
+        - 解説の改善提案
+        - テンプレートの改善提案
+        - 新規コンテンツの提案
+        - その他
+    validations:
+      required: true
+
+  - type: input
+    id: page
+    attributes:
+      label: 対象ページ
+      description: 該当するページの URL またはファイルパス
+      placeholder: "例: https://isms-guide.com/requirements/6-1-2 または docs/requirements/6-1-2.md"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: 現状
+      description: 現在の記載内容や問題点を記載してください
+      placeholder: "現在「〇〇」と記載されていますが..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 提案内容
+      description: どのように修正・改善すべきかを記載してください
+      placeholder: "「△△」に修正すべきです。理由は..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reference
+    attributes:
+      label: 参考情報
+      description: 根拠となる情報源やリンクがあれば記載してください（任意）
+      placeholder: "ISO/IEC 27001:2022 の箇条 X.X.X によると..."
+    validations:
+      required: false
