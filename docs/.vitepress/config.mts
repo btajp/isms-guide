@@ -79,6 +79,21 @@ export default withMermaid(
             ]
           },
           {
+            text: '物理的管理策 (詳細)',
+            collapsed: true,
+            items: [
+              { text: 'A.7.1 物理的セキュリティ境界', link: '/controls/a-7-1' },
+              { text: 'A.7.2 物理的入退', link: '/controls/a-7-2' },
+              { text: 'A.7.3 オフィス・施設のセキュリティ', link: '/controls/a-7-3' },
+              { text: 'A.7.4 物理的セキュリティの監視', link: '/controls/a-7-4' },
+              { text: 'A.7.6 セキュリティ領域での作業', link: '/controls/a-7-6' },
+              { text: 'A.7.8 装置の設置及び保護', link: '/controls/a-7-8' },
+              { text: 'A.7.12 ケーブル配線のセキュリティ', link: '/controls/a-7-12' },
+              { text: 'A.7.13 装置の保守', link: '/controls/a-7-13' },
+              { text: 'A.7.14 装置の処分又は再利用', link: '/controls/a-7-14' }
+            ]
+          },
+          {
             text: '技術的管理策 (詳細)',
             collapsed: true,
             items: [
