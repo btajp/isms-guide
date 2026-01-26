@@ -287,7 +287,17 @@ export default withMermaid(
       await buildEndGenerateOpenGraphImages({
         baseUrl: 'https://isms-guide.com',
         category: {
-          byLevel: 2,
+          byPathPrefix: [
+            { prefix: 'controls', text: '管理策' },
+            { prefix: 'requirements', text: '要求事項' },
+            { prefix: 'templates', text: 'テンプレート' },
+            { prefix: 'glossary', text: '用語集' },
+            { prefix: 'about', text: 'サイト情報' },
+            { prefix: 'isms/guidelines', text: 'ガイドライン' },
+            { prefix: 'isms/policies', text: '方針' },
+            { prefix: 'isms/procedures', text: '手順書' },
+            { prefix: 'isms/records', text: '記録' },
+          ],
         },
         maxCharactersPerLine: 24,
       })(siteConfig)
