@@ -27,9 +27,53 @@ cd isms-guide
 
 仮想組織ドキュメントには、置き換えるべき項目の [チェックリスト](/templates/virtual-organization#checklist) と、組織規模に応じた [調整ポイント](/templates/virtual-organization#scaling) が含まれています。
 
-### 2.1 一括置換の実行
+### 2.1 自動生成ツールを使用する方法（推奨）
 
-すべてのテンプレートで共通のプレースホルダーを一括置換します。
+文書自動生成ツールを使用すると、設定ファイルに基づいてすべてのプレースホルダーを一括で置換できます。
+
+#### 設定ファイルの作成
+
+`organization.example.json` をコピーして `organization.json` を作成し、自組織の情報を入力します。
+
+```bash
+cp organization.example.json organization.json
+```
+
+```json
+{
+  "組織名": "株式会社サンプル",
+  "ISMS責任者": "情報セキュリティ部長",
+  "発効日": "2025-04-01",
+  "適用範囲": "本社情報システム部門",
+  "承認者": "代表取締役",
+  "実施状況": "実施済",
+  "バージョン": "1.0"
+}
+```
+
+#### 文書の生成
+
+```bash
+# 文書を生成（outputディレクトリに出力）
+node scripts/generate-docs.js organization.json
+
+# 出力先を指定する場合
+node scripts/generate-docs.js -o ./my-isms-docs organization.json
+```
+
+#### ヘルプとオプション
+
+```bash
+# ヘルプを表示
+node scripts/generate-docs.js --help
+
+# 利用可能なプレースホルダーを一覧表示
+node scripts/generate-docs.js --list
+```
+
+### 2.2 手動で一括置換する方法
+
+sedコマンドを使用して手動で置換することもできます。
 
 ```bash
 # 組織名の置換
@@ -42,7 +86,7 @@ find docs/isms -name "*.md" -exec sed -i '' 's/{{ISMS責任者}}/情報セキュ
 find docs/isms -name "*.md" -exec sed -i '' 's/{{発効日}}/2025-04-01/g' {} \;
 ```
 
-### 2.2 主要プレースホルダー一覧
+### 2.3 主要プレースホルダー一覧
 
 | プレースホルダー | 説明 | 例 |
 |------------------|------|-----|
