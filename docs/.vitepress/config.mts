@@ -1,6 +1,12 @@
 import { defineConfig, HeadConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 import { buildEndGenerateOpenGraphImages } from '@nolebase/vitepress-plugin-og-image/vitepress'
+import { readFileSync } from 'node:fs'
+import { resolve, dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const mplus1p = readFileSync(resolve(__dirname, 'fonts/MPLUS1p-Bold.ttf'))
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid(
@@ -377,6 +383,7 @@ export default withMermaid(
           ],
         },
         maxCharactersPerLine: 12,
+        svgFontBuffers: [mplus1p],
       })(siteConfig)
     }
   })

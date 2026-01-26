@@ -23,22 +23,22 @@
   <rect x="907" y="0" width="8" height="630" fill="#3eaf7c"/>
 
   <!-- Site name - Large -->
-  <text x="600" y="140" font-family="sans-serif" font-size="56" font-weight="700" fill="#3eaf7c" text-anchor="middle">ISMS Guide</text>
+  <text x="600" y="140" font-family="M PLUS 1p, sans-serif" font-size="56" font-weight="700" fill="#3eaf7c" text-anchor="middle">ISMS Guide</text>
 
   <!-- Subtitle -->
-  <text x="600" y="190" font-family="sans-serif" font-size="24" fill="#333333" text-anchor="middle">ISO/IEC 27001:2022 対応 ISMS 構築ガイド</text>
+  <text x="600" y="190" font-family="M PLUS 1p, sans-serif" font-size="24" fill="#333333" text-anchor="middle">ISO/IEC 27001:2022 対応 ISMS 構築ガイド</text>
 
   <!-- Category badge -->
   <rect x="480" y="225" width="240" height="50" rx="25" fill="#3eaf7c" fill-opacity="0.1"/>
-  <text x="600" y="260" font-family="sans-serif" font-size="28" font-weight="600" fill="#3eaf7c" text-anchor="middle">{{category}}</text>
+  <text x="600" y="260" font-family="M PLUS 1p, sans-serif" font-size="28" font-weight="600" fill="#3eaf7c" text-anchor="middle">{{category}}</text>
 
   <!-- Page title (multi-line) -->
-  <text x="600" y="340" font-family="sans-serif" font-size="48" font-weight="700" fill="#1a1a1a" text-anchor="middle">{{line1}}</text>
-  <text x="600" y="395" font-family="sans-serif" font-size="48" font-weight="700" fill="#1a1a1a" text-anchor="middle">{{line2}}</text>
-  <text x="600" y="450" font-family="sans-serif" font-size="48" font-weight="700" fill="#1a1a1a" text-anchor="middle">{{line3}}</text>
+  <text x="600" y="340" font-family="M PLUS 1p, sans-serif" font-size="48" font-weight="700" fill="#1a1a1a" text-anchor="middle">{{line1}}</text>
+  <text x="600" y="395" font-family="M PLUS 1p, sans-serif" font-size="48" font-weight="700" fill="#1a1a1a" text-anchor="middle">{{line2}}</text>
+  <text x="600" y="450" font-family="M PLUS 1p, sans-serif" font-size="48" font-weight="700" fill="#1a1a1a" text-anchor="middle">{{line3}}</text>
 
   <!-- Footer line 1: URL -->
-  <text x="600" y="538" font-family="sans-serif" font-size="20" fill="#333333" text-anchor="middle">https://isms-guide.com</text>
+  <text x="600" y="538" font-family="M PLUS 1p, sans-serif" font-size="20" fill="#333333" text-anchor="middle">https://isms-guide.com</text>
 
   <!-- Footer line 2: CC BY-NC 4.0 icons (official paths, 30px) -->
   <g transform="translate(587, 563)">
@@ -58,9 +58,9 @@
     </g>
 
     <!-- Text label -->
-    <text x="0" y="7" font-family="sans-serif" font-size="18" font-weight="600" fill="#333333">CC BY-NC 4.0</text>
+    <text x="0" y="7" font-family="M PLUS 1p, sans-serif" font-size="18" font-weight="600" fill="#333333">CC BY-NC 4.0</text>
   </g>
 
   <!-- Footer line 3: Copyright -->
-  <text x="600" y="602" font-family="sans-serif" font-size="20" fill="#333333" text-anchor="middle"><tspan font-size="26" dy="2">©</tspan><tspan dy="-2"> 2026 Business Technology Association Japan</tspan></text>
+  <text x="600" y="602" font-family="M PLUS 1p, sans-serif" font-size="20" fill="#333333" text-anchor="middle"><tspan font-size="26" dy="2">©</tspan><tspan dy="-2"> 2026 Business Technology Association Japan</tspan></text>
 </svg>
