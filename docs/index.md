@@ -98,3 +98,11 @@ ISMS Guide は、ISO/IEC 27001:2022 に基づく情報セキュリティマネ�
 - **ISMS 文書テンプレートの公開** - ISMSマニュアル、適用宣言書（SoA）、手順書、記録類のテンプレート（現在鋭意作成中）
 - **文書自動生成機能** - テンプレートから組織ごとの文書一式を自動生成
 - **複数フォーマット対応** - Google Docs版、Word版、Notion版の制作
+
+## コントリビューション
+
+ISMS Guide はオープンソースプロジェクトです。皆さまのご協力をお待ちしています。
+
+- **Issue 報告** - 誤字脱字、内容の誤り、改善提案などは [GitHub Issues](https://github.com/btajp/isms-guide/issues) でお知らせください
+- **Pull Request** - ドキュメントの修正や新規コンテンツの追加を歓迎します
+- **Discussion** - ご質問やアイデアは [GitHub Discussions](https://github.com/btajp/isms-guide/discussions) でお気軽にどうぞ
