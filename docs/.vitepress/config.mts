@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, HeadConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 
 // https://vitepress.dev/reference/site-config
@@ -23,9 +23,9 @@ export default withMermaid(
     // Head meta tags
     head: [
       ['meta', { name: 'theme-color', content: '#3eaf7c' }],
-      ['meta', { name: 'og:type', content: 'website' }],
-      ['meta', { name: 'og:locale', content: 'ja_JP' }],
-      ['meta', { name: 'og:site_name', content: 'ISMS Guide' }],
+      ['meta', { property: 'og:type', content: 'website' }],
+      ['meta', { property: 'og:locale', content: 'ja_JP' }],
+      ['meta', { property: 'og:site_name', content: 'ISMS Guide' }],
       // Favicon
       ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
       ['link', { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicon-96x96.png' }],
@@ -238,6 +238,35 @@ export default withMermaid(
     },
 
     // Last updated
-    lastUpdated: true
+    lastUpdated: true,
+
+    // Dynamic OGP meta tags per page
+    transformHead({ pageData }) {
+      const head: HeadConfig[] = []
+      const siteUrl = 'https://isms-guide.com'
+
+      // og:title
+      const title = pageData.frontmatter.title || pageData.title || 'ISMS Guide'
+      head.push(['meta', { property: 'og:title', content: title }])
+
+      // og:description
+      const description =
+        pageData.frontmatter.description || 'ISO/IEC 27001:2022 対応 ISMS 構築ガイド'
+      head.push(['meta', { property: 'og:description', content: description }])
+
+      // og:url
+      const relativePath = pageData.relativePath
+        .replace(/\.md$/, '.html')
+        .replace(/index\.html$/, '')
+      const url = `${siteUrl}/${relativePath}`
+      head.push(['meta', { property: 'og:url', content: url }])
+
+      // Twitter Cards
+      head.push(['meta', { name: 'twitter:card', content: 'summary' }])
+      head.push(['meta', { name: 'twitter:title', content: title }])
+      head.push(['meta', { name: 'twitter:description', content: description }])
+
+      return head
+    }
   })
 )
