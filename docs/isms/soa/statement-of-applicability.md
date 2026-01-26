@@ -42,10 +42,10 @@ status: "draft"
 | [A.5.2](/controls/#a-5-2) | [情報セキュリティの役割及び責任](/controls/#a-5-2) | O | 規格要求事項 | {{実施状況}} | [ISMSマニュアル](../manual/isms-manual.md#_5-リーダーシップ) |
 | [A.5.3](/controls/#a-5-3) | [職務の分離](/controls/#a-5-3) | O | リスク対応として必要 | {{実施状況}} | [アクセス制御方針](../policies/access-control-policy.md#_3-2-職務分離) |
 | [A.5.4](/controls/#a-5-4) | [経営陣の責任](/controls/#a-5-4) | O | 規格要求事項 | {{実施状況}} | [ISMSマニュアル](../manual/isms-manual.md#_5-リーダーシップ) |
-| [A.5.5](/controls/#a-5-5) | [関係当局との連絡](/controls/#a-5-5) | O | 法的要求事項 | {{実施状況}} | [管理策詳細](/controls/a-5-5) |
-| [A.5.6](/controls/#a-5-6) | [専門組織との連絡](/controls/#a-5-6) | O | ベストプラクティス | {{実施状況}} | [管理策詳細](/controls/a-5-6) |
-| [A.5.7](/controls/#a-5-7) | [脅威インテリジェンス](/controls/#a-5-7) | O | リスク対応として必要 | {{実施状況}} | [管理策詳細](/controls/a-5-7) |
-| [A.5.8](/controls/#a-5-8) | [プロジェクトマネジメントにおける情報セキュリティ](/controls/#a-5-8) | O | リスク対応として必要 | {{実施状況}} | [管理策詳細](/controls/a-5-8) |
+| [A.5.5](/controls/#a-5-5) | [関係当局との連絡](/controls/#a-5-5) | O | 法的要求事項 | {{実施状況}} | [関係当局との連絡](/controls/a-5-5) |
+| [A.5.6](/controls/#a-5-6) | [専門組織との連絡](/controls/#a-5-6) | O | ベストプラクティス | {{実施状況}} | [専門組織との連絡](/controls/a-5-6) |
+| [A.5.7](/controls/#a-5-7) | [脅威インテリジェンス](/controls/#a-5-7) | O | リスク対応として必要 | {{実施状況}} | [脅威インテリジェンス](/controls/a-5-7) |
+| [A.5.8](/controls/#a-5-8) | [プロジェクトマネジメントにおける情報セキュリティ](/controls/#a-5-8) | O | リスク対応として必要 | {{実施状況}} | [プロジェクトマネジメントにおける情報セキュリティ](/controls/a-5-8) |
 | [A.5.9](/controls/#a-5-9) | [情報及びその他の関連資産の目録](/controls/#a-5-9) | O | 規格要求事項 | {{実施状況}} | [情報資産台帳](../registers/asset-inventory.md) |
 | [A.5.10](/controls/#a-5-10) | [情報及びその他の関連資産の利用の許容範囲](/controls/#a-5-10) | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md)、[従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md) |
 | [A.5.11](/controls/#a-5-11) | [資産の返却](/controls/#a-5-11) | O | リスク対応として必要 | {{実施状況}} | [従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_6-退職・異動時の義務-a-5-11-a-6-5) |
@@ -60,7 +60,7 @@ status: "draft"
 | [A.5.20](/controls/#a-5-20) | [供給者との合意における情報セキュリティの取扱い](/controls/#a-5-20) | O | リスク対応として必要 | {{実施状況}} | [サプライヤー管理方針](../policies/supplier-security-policy.md#_4-契約要件) |
 | [A.5.21](/controls/#a-5-21) | [ICTサプライチェーンにおける情報セキュリティの管理](/controls/#a-5-21) | O | リスク対応として必要 | {{実施状況}} | [サプライヤー管理方針](../policies/supplier-security-policy.md) |
 | [A.5.22](/controls/#a-5-22) | [供給者のサービス提供の監視、レビュー及び変更管理](/controls/#a-5-22) | O | リスク対応として必要 | {{実施状況}} | [サプライヤー管理方針](../policies/supplier-security-policy.md#_5-監視・レビュー) |
-| [A.5.23](/controls/#a-5-23) | [クラウドサービスの利用における情報セキュリティ](/controls/#a-5-23) | O | リスク対応として必要 | {{実施状況}} | [サプライヤー管理方針](../policies/supplier-security-policy.md)、[管理策詳細](/controls/a-5-23) |
+| [A.5.23](/controls/#a-5-23) | [クラウドサービスの利用における情報セキュリティ](/controls/#a-5-23) | O | リスク対応として必要 | {{実施状況}} | [サプライヤー管理方針](../policies/supplier-security-policy.md)、[クラウドサービスの利用における情報セキュリティ](/controls/a-5-23) |
 | [A.5.24](/controls/#a-5-24) | [情報セキュリティインシデント管理の計画策定及び準備](/controls/#a-5-24) | O | 規格要求事項 | {{実施状況}} | [インシデント対応手順](../procedures/incident-response-procedure.md) |
 | [A.5.25](/controls/#a-5-25) | [情報セキュリティ事象の評価及び決定](/controls/#a-5-25) | O | リスク対応として必要 | {{実施状況}} | [インシデント対応手順](../procedures/incident-response-procedure.md#_4-分類と優先度) |
 | [A.5.26](/controls/#a-5-26) | [情報セキュリティインシデントへの対応](/controls/#a-5-26) | O | リスク対応として必要 | {{実施状況}} | [インシデント対応手順](../procedures/incident-response-procedure.md#_5-対応手順) |
@@ -70,17 +70,17 @@ status: "draft"
 | [A.5.30](/controls/#a-5-30) | [事業継続のための ICT の備え](/controls/#a-5-30) | O | リスク対応として必要 | {{実施状況}} | [事業継続計画](../plans/business-continuity-plan.md#_6-ict継続計画) |
 | [A.5.31](/controls/#a-5-31) | [法的、法令及び規制要求事項の識別](/controls/#a-5-31) | O | 法的要求事項 | {{実施状況}} | [法的・規制要求事項一覧](../registers/legal-requirements.md) |
 | [A.5.32](/controls/#a-5-32) | [知的財産権](/controls/#a-5-32) | O | 法的要求事項 | {{実施状況}} | [法的・規制要求事項一覧](../registers/legal-requirements.md) |
-| [A.5.33](/controls/#a-5-33) | [記録の保護](/controls/#a-5-33) | O | 法的要求事項 | {{実施状況}} | [ISMSマニュアル](../manual/isms-manual.md#_7-支援)、[管理策詳細](/controls/a-5-33) |
+| [A.5.33](/controls/#a-5-33) | [記録の保護](/controls/#a-5-33) | O | 法的要求事項 | {{実施状況}} | [ISMSマニュアル](../manual/isms-manual.md#_7-支援)、[記録の保護](/controls/a-5-33) |
 | [A.5.34](/controls/#a-5-34) | [プライバシー及び PII の保護](/controls/#a-5-34) | O | 法的要求事項 | {{実施状況}} | [法的・規制要求事項一覧](../registers/legal-requirements.md) |
 | [A.5.35](/controls/#a-5-35) | [情報セキュリティの独立したレビュー](/controls/#a-5-35) | O | 規格要求事項 | {{実施状況}} | [内部監査手順](../procedures/internal-audit-procedure.md) |
 | [A.5.36](/controls/#a-5-36) | [情報セキュリティのための方針群、規則及び標準の順守](/controls/#a-5-36) | O | 規格要求事項 | {{実施状況}} | [監視・測定記録](../records/monitoring-measurement-record.md) |
-| [A.5.37](/controls/#a-5-37) | [文書化した運用手順](/controls/#a-5-37) | O | リスク対応として必要 | {{実施状況}} | [ISMSマニュアル](../manual/isms-manual.md#_7-支援)、[管理策詳細](/controls/a-5-37) |
+| [A.5.37](/controls/#a-5-37) | [文書化した運用手順](/controls/#a-5-37) | O | リスク対応として必要 | {{実施状況}} | [ISMSマニュアル](../manual/isms-manual.md#_7-支援)、[文書化した運用手順](/controls/a-5-37) |
 
 ### A.6 人的管理策（8項目）
 
 | No. | 管理策 | 適用 | 適用/除外の理由 | 実施状況 | 実装文書 |
 |-----|--------|:----:|-----------------|----------|----------|
-| [A.6.1](/controls/#a-6-1) | [選考](/controls/#a-6-1) | O | リスク対応として必要 | {{実施状況}} | [管理策詳細](/controls/a-6-1) |
+| [A.6.1](/controls/#a-6-1) | [選考](/controls/#a-6-1) | O | リスク対応として必要 | {{実施状況}} | [選考](/controls/a-6-1) |
 | [A.6.2](/controls/#a-6-2) | [雇用条件](/controls/#a-6-2) | O | リスク対応として必要 | {{実施状況}} | [従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_3-3-利用規約への同意-a-6-2) |
 | [A.6.3](/controls/#a-6-3) | [情報セキュリティの意識向上、教育及び訓練](/controls/#a-6-3) | O | 規格要求事項 | {{実施状況}} | [教育訓練記録](../records/training-record.md)、[従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_3-2-セキュリティ教育の受講-a-6-3) |
 | [A.6.4](/controls/#a-6-4) | [懲戒プロセス](/controls/#a-6-4) | O | リスク対応として必要 | {{実施状況}} | [是正処置手順](../procedures/corrective-action-procedure.md) |
@@ -93,20 +93,20 @@ status: "draft"
 
 | No. | 管理策 | 適用 | 適用/除外の理由 | 実施状況 | 実装文書 |
 |-----|--------|:----:|-----------------|----------|----------|
-| [A.7.1](/controls/#a-7-1) | [物理的セキュリティ境界](/controls/#a-7-1) | O | リスク対応として必要 | {{実施状況}} | [管理策詳細](/controls/a-7-1) |
-| [A.7.2](/controls/#a-7-2) | [物理的入退](/controls/#a-7-2) | O | リスク対応として必要 | {{実施状況}} | [管理策詳細](/controls/a-7-2) |
-| [A.7.3](/controls/#a-7-3) | [オフィス、部屋及び施設のセキュリティ](/controls/#a-7-3) | O | リスク対応として必要 | {{実施状況}} | [管理策詳細](/controls/a-7-3) |
-| [A.7.4](/controls/#a-7-4) | [物理的セキュリティの監視](/controls/#a-7-4) | O | リスク対応として必要 | {{実施状況}} | [管理策詳細](/controls/a-7-4) |
+| [A.7.1](/controls/#a-7-1) | [物理的セキュリティ境界](/controls/#a-7-1) | O | リスク対応として必要 | {{実施状況}} | [物理的セキュリティ境界](/controls/a-7-1) |
+| [A.7.2](/controls/#a-7-2) | [物理的入退](/controls/#a-7-2) | O | リスク対応として必要 | {{実施状況}} | [物理的入退](/controls/a-7-2) |
+| [A.7.3](/controls/#a-7-3) | [オフィス、部屋及び施設のセキュリティ](/controls/#a-7-3) | O | リスク対応として必要 | {{実施状況}} | [オフィス、部屋及び施設のセキュリティ](/controls/a-7-3) |
+| [A.7.4](/controls/#a-7-4) | [物理的セキュリティの監視](/controls/#a-7-4) | O | リスク対応として必要 | {{実施状況}} | [物理的セキュリティの監視](/controls/a-7-4) |
 | [A.7.5](/controls/#a-7-5) | [物理的及び環境的脅威からの保護](/controls/#a-7-5) | O | リスク対応として必要 | {{実施状況}} | [事業継続計画](../plans/business-continuity-plan.md) |
-| [A.7.6](/controls/#a-7-6) | [セキュリティを保つべき領域での作業](/controls/#a-7-6) | O | リスク対応として必要 | {{実施状況}} | [管理策詳細](/controls/a-7-6) |
+| [A.7.6](/controls/#a-7-6) | [セキュリティを保つべき領域での作業](/controls/#a-7-6) | O | リスク対応として必要 | {{実施状況}} | [セキュリティを保つべき領域での作業](/controls/a-7-6) |
 | [A.7.7](/controls/#a-7-7) | [クリアデスク・クリアスクリーン](/controls/#a-7-7) | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md)、[従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_4-3-クリアデスク・クリアスクリーン-a-7-7) |
-| [A.7.8](/controls/#a-7-8) | [装置の設置及び保護](/controls/#a-7-8) | O | リスク対応として必要 | {{実施状況}} | [管理策詳細](/controls/a-7-8) |
+| [A.7.8](/controls/#a-7-8) | [装置の設置及び保護](/controls/#a-7-8) | O | リスク対応として必要 | {{実施状況}} | [装置の設置及び保護](/controls/a-7-8) |
 | [A.7.9](/controls/#a-7-9) | [構外にある資産のセキュリティ](/controls/#a-7-9) | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md)、[従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_4-7-構外での資産管理-a-7-9) |
 | [A.7.10](/controls/#a-7-10) | [記憶媒体](/controls/#a-7-10) | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md)、[従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_4-6-記憶媒体の取扱い-a-7-10) |
 | [A.7.11](/controls/#a-7-11) | [サポートユーティリティ](/controls/#a-7-11) | O | リスク対応として必要 | {{実施状況}} | [事業継続計画](../plans/business-continuity-plan.md) |
-| [A.7.12](/controls/#a-7-12) | [ケーブル配線のセキュリティ](/controls/#a-7-12) | O | リスク対応として必要 | {{実施状況}} | [管理策詳細](/controls/a-7-12) |
-| [A.7.13](/controls/#a-7-13) | [装置の保守](/controls/#a-7-13) | O | リスク対応として必要 | {{実施状況}} | [管理策詳細](/controls/a-7-13) |
-| [A.7.14](/controls/#a-7-14) | [装置のセキュリティを保った処分又は再利用](/controls/#a-7-14) | O | リスク対応として必要 | {{実施状況}} | [管理策詳細](/controls/a-7-14) |
+| [A.7.12](/controls/#a-7-12) | [ケーブル配線のセキュリティ](/controls/#a-7-12) | O | リスク対応として必要 | {{実施状況}} | [ケーブル配線のセキュリティ](/controls/a-7-12) |
+| [A.7.13](/controls/#a-7-13) | [装置の保守](/controls/#a-7-13) | O | リスク対応として必要 | {{実施状況}} | [装置の保守](/controls/a-7-13) |
+| [A.7.14](/controls/#a-7-14) | [装置のセキュリティを保った処分又は再利用](/controls/#a-7-14) | O | リスク対応として必要 | {{実施状況}} | [装置のセキュリティを保った処分又は再利用](/controls/a-7-14) |
 
 ### A.8 技術的管理策（34項目）
 
