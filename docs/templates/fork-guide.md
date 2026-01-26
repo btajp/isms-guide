@@ -23,6 +23,10 @@ cd isms-guide
 
 ## Step 2: 組織情報の設定
 
+本テンプレートでは、サンプルデータとして「株式会社テクノソリューションズ」という仮想組織を使用しています。詳細は [仮想組織の設定](/templates/virtual-organization) を参照してください。
+
+仮想組織ドキュメントには、置き換えるべき項目の [チェックリスト](/templates/virtual-organization#checklist) と、組織規模に応じた [調整ポイント](/templates/virtual-organization#scaling) が含まれています。
+
 ### 2.1 一括置換の実行
 
 すべてのテンプレートで共通のプレースホルダーを一括置換します。
@@ -187,5 +191,6 @@ YAML 構文を確認：
 ## 参考リンク
 
 - [テンプレート一覧](/templates/) - 全テンプレートの概要
+- [仮想組織の設定](/templates/virtual-organization) - テンプレートで使用する仮想組織
 - [要求事項](/requirements/) - ISO/IEC 27001 要求事項の解説
 - [用語集](/glossary/) - ISMS 関連用語の定義
