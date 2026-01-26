@@ -47,14 +47,14 @@ status: "draft"
 | A.5.7 | 脅威インテリジェンス | O | リスク対応として必要 | {{実施状況}} | - |
 | A.5.8 | プロジェクトマネジメントにおける情報セキュリティ | O | リスク対応として必要 | {{実施状況}} | - |
 | A.5.9 | 情報及びその他の関連資産の目録 | O | 規格要求事項 | {{実施状況}} | [情報資産台帳](../registers/asset-inventory.md) |
-| A.5.10 | 情報及びその他の関連資産の利用の許容範囲 | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md) |
-| A.5.11 | 資産の返却 | O | リスク対応として必要 | {{実施状況}} | - |
-| A.5.12 | 情報の分類 | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md) |
-| A.5.13 | 情報のラベル付け | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md) |
-| A.5.14 | 情報転送 | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md) |
+| A.5.10 | 情報及びその他の関連資産の利用の許容範囲 | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md)、[従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md) |
+| A.5.11 | 資産の返却 | O | リスク対応として必要 | {{実施状況}} | [従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_6-退職・異動時の義務) |
+| A.5.12 | 情報の分類 | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md)、[従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_4-1-情報の取扱い) |
+| A.5.13 | 情報のラベル付け | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md)、[従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_4-1-情報の取扱い) |
+| A.5.14 | 情報転送 | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md)、[従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_4-1-情報の取扱い) |
 | A.5.15 | アクセス制御 | O | リスク対応として必要 | {{実施状況}} | [アクセス制御方針](../policies/access-control-policy.md) |
 | A.5.16 | 識別情報の管理 | O | リスク対応として必要 | {{実施状況}} | [アクセス制御方針](../policies/access-control-policy.md#_4-1-利用者登録) |
-| A.5.17 | 認証情報 | O | リスク対応として必要 | {{実施状況}} | [アクセス制御方針](../policies/access-control-policy.md#_4-2-認証) |
+| A.5.17 | 認証情報 | O | リスク対応として必要 | {{実施状況}} | [アクセス制御方針](../policies/access-control-policy.md#_4-2-認証)、[従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_4-2-パスワード管理) |
 | A.5.18 | アクセス権 | O | リスク対応として必要 | {{実施状況}} | [アクセス制御方針](../policies/access-control-policy.md#_4-アクセス制御要件) |
 | A.5.19 | 供給者関係における情報セキュリティ | O | リスク対応として必要 | {{実施状況}} | [サプライヤー管理方針](../policies/supplier-security-policy.md) |
 | A.5.20 | 供給者との合意における情報セキュリティの取扱い | O | リスク対応として必要 | {{実施状況}} | [サプライヤー管理方針](../policies/supplier-security-policy.md#_4-契約要件) |
@@ -81,13 +81,13 @@ status: "draft"
 | No. | 管理策 | 適用 | 適用/除外の理由 | 実施状況 | 実装文書 |
 |-----|--------|:----:|-----------------|----------|----------|
 | A.6.1 | 選考 | O | リスク対応として必要 | {{実施状況}} | - |
-| A.6.2 | 雇用条件 | O | リスク対応として必要 | {{実施状況}} | - |
-| A.6.3 | 情報セキュリティの意識向上、教育及び訓練 | O | 規格要求事項 | {{実施状況}} | [教育訓練記録](../records/training-record.md) |
+| A.6.2 | 雇用条件 | O | リスク対応として必要 | {{実施状況}} | [従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_3-利用規約への同意) |
+| A.6.3 | 情報セキュリティの意識向上、教育及び訓練 | O | 規格要求事項 | {{実施状況}} | [教育訓練記録](../records/training-record.md)、[従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_3-2-セキュリティ教育の受講) |
 | A.6.4 | 懲戒プロセス | O | リスク対応として必要 | {{実施状況}} | [是正処置手順](../procedures/corrective-action-procedure.md) |
-| A.6.5 | 雇用の終了又は変更後の責任 | O | リスク対応として必要 | {{実施状況}} | - |
-| A.6.6 | 秘密保持契約又は守秘義務契約 | O | 法的要求事項 | {{実施状況}} | [サプライヤー管理方針](../policies/supplier-security-policy.md) |
-| A.6.7 | リモートワーク | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md) |
-| A.6.8 | 情報セキュリティ事象の報告 | O | 規格要求事項 | {{実施状況}} | [インシデント対応手順](../procedures/incident-response-procedure.md#_3-対応フロー) |
+| A.6.5 | 雇用の終了又は変更後の責任 | O | リスク対応として必要 | {{実施状況}} | [従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_6-退職・異動時の義務) |
+| A.6.6 | 秘密保持契約又は守秘義務契約 | O | 法的要求事項 | {{実施状況}} | [サプライヤー管理方針](../policies/supplier-security-policy.md)、[従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_3-1-秘密保持義務) |
+| A.6.7 | リモートワーク | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md)、[従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_4-5-リモートワーク) |
+| A.6.8 | 情報セキュリティ事象の報告 | O | 規格要求事項 | {{実施状況}} | [インシデント対応手順](../procedures/incident-response-procedure.md#_3-対応フロー)、[従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_5-セキュリティ事象の報告) |
 
 ### A.7 物理的管理策（14項目）
 
@@ -99,10 +99,10 @@ status: "draft"
 | A.7.4 | 物理的セキュリティの監視 | O | リスク対応として必要 | {{実施状況}} | - |
 | A.7.5 | 物理的及び環境的脅威からの保護 | O | リスク対応として必要 | {{実施状況}} | [事業継続計画](../plans/business-continuity-plan.md) |
 | A.7.6 | セキュリティを保つべき領域での作業 | O | リスク対応として必要 | {{実施状況}} | - |
-| A.7.7 | クリアデスク・クリアスクリーン | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md) |
+| A.7.7 | クリアデスク・クリアスクリーン | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md)、[従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_4-3-クリアデスク・クリアスクリーン) |
 | A.7.8 | 装置の設置及び保護 | O | リスク対応として必要 | {{実施状況}} | - |
-| A.7.9 | 構外にある資産のセキュリティ | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md) |
-| A.7.10 | 記憶媒体 | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md) |
+| A.7.9 | 構外にある資産のセキュリティ | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md)、[従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_4-7-構外での資産管理) |
+| A.7.10 | 記憶媒体 | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md)、[従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_4-6-記憶媒体の取扱い) |
 | A.7.11 | サポートユーティリティ | O | リスク対応として必要 | {{実施状況}} | [事業継続計画](../plans/business-continuity-plan.md) |
 | A.7.12 | ケーブル配線のセキュリティ | O | リスク対応として必要 | {{実施状況}} | - |
 | A.7.13 | 装置の保守 | O | リスク対応として必要 | {{実施状況}} | - |
@@ -112,40 +112,40 @@ status: "draft"
 
 | No. | 管理策 | 適用 | 適用/除外の理由 | 実施状況 | 実装文書 |
 |-----|--------|:----:|-----------------|----------|----------|
-| A.8.1 | 利用者エンドポイント機器 | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md) |
-| A.8.2 | 特権的アクセス権 | O | リスク対応として必要 | {{実施状況}} | [アクセス制御方針](../policies/access-control-policy.md) |
-| A.8.3 | 情報へのアクセス制限 | O | リスク対応として必要 | {{実施状況}} | [アクセス制御方針](../policies/access-control-policy.md#_3-1-最小権限の原則) |
-| A.8.4 | ソースコードへのアクセス | O | リスク対応として必要 | {{実施状況}} | [アクセス制御方針](../policies/access-control-policy.md) |
-| A.8.5 | セキュリティを保った認証 | O | リスク対応として必要 | {{実施状況}} | [アクセス制御方針](../policies/access-control-policy.md#_4-2-認証) |
-| A.8.6 | 容量・能力の管理 | O | リスク対応として必要 | {{実施状況}} | [事業継続計画](../plans/business-continuity-plan.md) |
-| A.8.7 | マルウェアに対する保護 | O | リスク対応として必要 | {{実施状況}} | - |
-| A.8.8 | 技術的ぜい弱性の管理 | O | リスク対応として必要 | {{実施状況}} | - |
-| A.8.9 | 構成管理 | O | リスク対応として必要 | {{実施状況}} | [情報資産台帳](../registers/asset-inventory.md) |
-| A.8.10 | 情報の削除 | O | 法的要求事項 | {{実施状況}} | [法的・規制要求事項一覧](../registers/legal-requirements.md) |
-| A.8.11 | データマスキング | O | リスク対応として必要 | {{実施状況}} | - |
-| A.8.12 | データ漏えいの防止 | O | リスク対応として必要 | {{実施状況}} | - |
+| A.8.1 | 利用者エンドポイント機器 | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md)、[従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md#_4-4-端末・デバイスの管理) |
+| A.8.2 | 特権的アクセス権 | O | リスク対応として必要 | {{実施状況}} | [アクセス制御方針](../policies/access-control-policy.md)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_3-1-特権アクセスの管理) |
+| A.8.3 | 情報へのアクセス制限 | O | リスク対応として必要 | {{実施状況}} | [アクセス制御方針](../policies/access-control-policy.md#_3-1-最小権限の原則)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_3-2-情報へのアクセス制限) |
+| A.8.4 | ソースコードへのアクセス | O | リスク対応として必要 | {{実施状況}} | [アクセス制御方針](../policies/access-control-policy.md)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_3-3-ソースコードへのアクセス) |
+| A.8.5 | セキュリティを保った認証 | O | リスク対応として必要 | {{実施状況}} | [アクセス制御方針](../policies/access-control-policy.md#_4-2-認証)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_3-4-認証の実装) |
+| A.8.6 | 容量・能力の管理 | O | リスク対応として必要 | {{実施状況}} | [事業継続計画](../plans/business-continuity-plan.md)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_7-3-容量・能力の管理) |
+| A.8.7 | マルウェアに対する保護 | O | リスク対応として必要 | {{実施状況}} | [技術的セキュリティ方針](../policies/technical-security-policy.md#_7-マルウェア対策方針)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_8-1-マルウェア対策) |
+| A.8.8 | 技術的ぜい弱性の管理 | O | リスク対応として必要 | {{実施状況}} | [技術的セキュリティ方針](../policies/technical-security-policy.md#_8-脆弱性管理方針)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_8-2-脆弱性管理) |
+| A.8.9 | 構成管理 | O | リスク対応として必要 | {{実施状況}} | [情報資産台帳](../registers/asset-inventory.md)、[技術的セキュリティ方針](../policies/technical-security-policy.md#_9-構成管理方針)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_8-3-構成管理) |
+| A.8.10 | 情報の削除 | O | 法的要求事項 | {{実施状況}} | [法的・規制要求事項一覧](../registers/legal-requirements.md)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_9-1-情報の削除) |
+| A.8.11 | データマスキング | O | リスク対応として必要 | {{実施状況}} | [エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_9-2-データマスキング) |
+| A.8.12 | データ漏えいの防止 | O | リスク対応として必要 | {{実施状況}} | [エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_8-4-データ漏えい防止) |
 | A.8.13 | 情報のバックアップ | O | リスク対応として必要 | {{実施状況}} | [事業継続計画](../plans/business-continuity-plan.md#_6-ict継続計画) |
 | A.8.14 | 情報処理施設の冗長性 | O | リスク対応として必要 | {{実施状況}} | [事業継続計画](../plans/business-continuity-plan.md#_6-ict継続計画) |
-| A.8.15 | ログ取得 | O | リスク対応として必要 | {{実施状況}} | [監視・測定記録](../records/monitoring-measurement-record.md) |
-| A.8.16 | 監視活動 | O | リスク対応として必要 | {{実施状況}} | [監視・測定記録](../records/monitoring-measurement-record.md) |
-| A.8.17 | クロックの同期 | O | リスク対応として必要 | {{実施状況}} | - |
-| A.8.18 | 特権的なユーティリティプログラムの使用 | O | リスク対応として必要 | {{実施状況}} | [アクセス制御方針](../policies/access-control-policy.md) |
-| A.8.19 | 運用システムに関わるソフトウェアの導入 | O | リスク対応として必要 | {{実施状況}} | - |
-| A.8.20 | ネットワークのセキュリティ | O | リスク対応として必要 | {{実施状況}} | - |
-| A.8.21 | ネットワークサービスのセキュリティ | O | リスク対応として必要 | {{実施状況}} | [サプライヤー管理方針](../policies/supplier-security-policy.md) |
-| A.8.22 | ネットワークの分離 | O | リスク対応として必要 | {{実施状況}} | - |
-| A.8.23 | ウェブ・フィルタリング | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md) |
-| A.8.24 | 暗号の使用 | O | リスク対応として必要 | {{実施状況}} | - |
-| A.8.25 | セキュリティに配慮した開発のライフサイクル | O | リスク対応として必要 | {{実施状況}} | - |
-| A.8.26 | アプリケーションのセキュリティの要求事項 | O | リスク対応として必要 | {{実施状況}} | - |
-| A.8.27 | セキュリティに配慮したシステムアーキテクチャ及びシステム構築の原則 | O | リスク対応として必要 | {{実施状況}} | - |
-| A.8.28 | セキュリティに配慮したコーディング | O | リスク対応として必要 | {{実施状況}} | - |
-| A.8.29 | 開発及び受入れにおけるセキュリティ試験 | O | リスク対応として必要 | {{実施状況}} | - |
-| A.8.30 | 外部委託による開発 | O | リスク対応として必要 | {{実施状況}} | [サプライヤー管理方針](../policies/supplier-security-policy.md) |
-| A.8.31 | 開発環境、試験環境及び運用環境の分離 | O | リスク対応として必要 | {{実施状況}} | - |
-| A.8.32 | 変更管理 | O | リスク対応として必要 | {{実施状況}} | - |
-| A.8.33 | 試験情報 | O | リスク対応として必要 | {{実施状況}} | - |
-| A.8.34 | 監査試験中の情報システムの保護 | O | リスク対応として必要 | {{実施状況}} | [内部監査手順](../procedures/internal-audit-procedure.md) |
+| A.8.15 | ログ取得 | O | リスク対応として必要 | {{実施状況}} | [監視・測定記録](../records/monitoring-measurement-record.md)、[技術的セキュリティ方針](../policies/technical-security-policy.md#_10-ログ・監視方針)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_10-1-ログ取得の実装) |
+| A.8.16 | 監視活動 | O | リスク対応として必要 | {{実施状況}} | [監視・測定記録](../records/monitoring-measurement-record.md)、[技術的セキュリティ方針](../policies/technical-security-policy.md#_10-2-監視活動)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_10-2-監視の実装) |
+| A.8.17 | クロックの同期 | O | リスク対応として必要 | {{実施状況}} | [技術的セキュリティ方針](../policies/technical-security-policy.md#_10-3-時刻同期)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_10-3-時刻同期) |
+| A.8.18 | 特権的なユーティリティプログラムの使用 | O | リスク対応として必要 | {{実施状況}} | [アクセス制御方針](../policies/access-control-policy.md)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_3-5-特権ユーティリティの使用) |
+| A.8.19 | 運用システムに関わるソフトウェアの導入 | O | リスク対応として必要 | {{実施状況}} | [技術的セキュリティ方針](../policies/technical-security-policy.md#_6-2-ソフトウェア導入)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_7-2-ソフトウェア導入) |
+| A.8.20 | ネットワークのセキュリティ | O | リスク対応として必要 | {{実施状況}} | [技術的セキュリティ方針](../policies/technical-security-policy.md#_4-ネットワークセキュリティ方針)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_6-1-ネットワークセキュリティ) |
+| A.8.21 | ネットワークサービスのセキュリティ | O | リスク対応として必要 | {{実施状況}} | [サプライヤー管理方針](../policies/supplier-security-policy.md)、[技術的セキュリティ方針](../policies/technical-security-policy.md#_4-3-ネットワークサービスのセキュリティ)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_6-1-ネットワークセキュリティ) |
+| A.8.22 | ネットワークの分離 | O | リスク対応として必要 | {{実施状況}} | [技術的セキュリティ方針](../policies/technical-security-policy.md#_4-2-ネットワーク分離)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_6-1-ネットワークセキュリティ) |
+| A.8.23 | ウェブ・フィルタリング | O | リスク対応として必要 | {{実施状況}} | [情報の許容される利用方針](../policies/acceptable-use-policy.md)、[技術的セキュリティ方針](../policies/technical-security-policy.md#_4-4-ウェブフィルタリング)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_6-2-ウェブフィルタリング) |
+| A.8.24 | 暗号の使用 | O | リスク対応として必要 | {{実施状況}} | [技術的セキュリティ方針](../policies/technical-security-policy.md#_3-暗号化方針)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_6-3-暗号化の実装) |
+| A.8.25 | セキュリティに配慮した開発のライフサイクル | O | リスク対応として必要 | {{実施状況}} | [技術的セキュリティ方針](../policies/technical-security-policy.md#_5-1-セキュア開発ライフサイクル)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_4-1-セキュア開発ライフサイクル) |
+| A.8.26 | アプリケーションのセキュリティの要求事項 | O | リスク対応として必要 | {{実施状況}} | [技術的セキュリティ方針](../policies/technical-security-policy.md#_5-2-セキュリティ要求事項)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_4-2-セキュリティ要求事項の定義) |
+| A.8.27 | セキュリティに配慮したシステムアーキテクチャ及びシステム構築の原則 | O | リスク対応として必要 | {{実施状況}} | [技術的セキュリティ方針](../policies/technical-security-policy.md#_5-3-セキュアアーキテクチャ原則)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_4-3-セキュアアーキテクチャ) |
+| A.8.28 | セキュリティに配慮したコーディング | O | リスク対応として必要 | {{実施状況}} | [技術的セキュリティ方針](../policies/technical-security-policy.md#_5-4-セキュアコーディング)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_4-4-セキュアコーディング規約) |
+| A.8.29 | 開発及び受入れにおけるセキュリティ試験 | O | リスク対応として必要 | {{実施状況}} | [技術的セキュリティ方針](../policies/technical-security-policy.md#_5-5-セキュリティテスト)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_4-5-セキュリティテスト) |
+| A.8.30 | 外部委託による開発 | O | リスク対応として必要 | {{実施状況}} | [サプライヤー管理方針](../policies/supplier-security-policy.md)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_4-6-外部委託開発の管理) |
+| A.8.31 | 開発環境、試験環境及び運用環境の分離 | O | リスク対応として必要 | {{実施状況}} | [技術的セキュリティ方針](../policies/technical-security-policy.md#_5-6-環境分離)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_5-1-開発・テスト・本番環境の分離) |
+| A.8.32 | 変更管理 | O | リスク対応として必要 | {{実施状況}} | [技術的セキュリティ方針](../policies/technical-security-policy.md#_6-変更管理方針)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_7-1-変更管理) |
+| A.8.33 | 試験情報 | O | リスク対応として必要 | {{実施状況}} | [エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_5-2-テストデータの管理) |
+| A.8.34 | 監査試験中の情報システムの保護 | O | リスク対応として必要 | {{実施状況}} | [内部監査手順](../procedures/internal-audit-procedure.md)、[エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md#_5-3-監査テスト時の保護) |
 
 ## 5. 管理策の適用状況サマリー
 
@@ -162,6 +162,9 @@ status: "draft"
 - [ISMS マニュアル](../manual/isms-manual.md)
 - [リスク台帳](../registers/risk-register.md)
 - [リスク対応計画](../plans/risk-treatment-plan.md)
+- [技術的セキュリティ方針](../policies/technical-security-policy.md)
+- [従業員向けセキュリティガイドライン](../guidelines/employee-security-guideline.md)
+- [エンジニア向けセキュリティガイドライン](../guidelines/engineer-security-guideline.md)
 
 ## 改訂履歴
 

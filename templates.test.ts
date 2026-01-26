@@ -37,6 +37,7 @@ describe('ISMS Templates - Directory Structure', () => {
     'plans',
     'registers',
     'records',
+    'guidelines',
   ]
 
   it.each(requiredDirs)('should have %s directory', (dir) => {
@@ -163,7 +164,7 @@ describe('ISMS Templates - Required Documents', () => {
 describe('ISMS Templates - Frontmatter Validation', () => {
   const getAllTemplates = (): string[] => {
     const templates: string[] = []
-    const dirs = ['manual', 'soa', 'policies', 'procedures', 'plans', 'registers', 'records']
+    const dirs = ['manual', 'soa', 'policies', 'procedures', 'plans', 'registers', 'records', 'guidelines']
 
     for (const dir of dirs) {
       const dirPath = resolve(ismsDir, dir)
@@ -251,6 +252,54 @@ describe('ISMS Templates - Document Structure', () => {
     const content = readTemplate('manual/isms-manual.md')
     // Should reference other templates with relative paths
     expect(content).toMatch(/\(\.\.\/.*?\.md\)/)
+  })
+})
+
+describe('ISMS Templates - Guidelines', () => {
+  it('should have guidelines directory', () => {
+    expect(existsSync(resolve(ismsDir, 'guidelines'))).toBe(true)
+  })
+
+  it('should have guidelines/index.md', () => {
+    expect(existsSync(resolve(ismsDir, 'guidelines/index.md'))).toBe(true)
+  })
+
+  const requiredGuidelines = [
+    'employee-security-guideline.md',
+    'engineer-security-guideline.md',
+  ]
+
+  it.each(requiredGuidelines)('should have %s', (guideline) => {
+    expect(existsSync(resolve(ismsDir, 'guidelines', guideline))).toBe(true)
+  })
+
+  it('should have employee-security-guideline with required sections', () => {
+    const content = readTemplate('guidelines/employee-security-guideline.md')
+    expect(content).toContain('入社時')
+    expect(content).toContain('在職中')
+    expect(content).toContain('退職')
+    expect(content).toContain('セキュリティ事象')
+  })
+
+  it('should have engineer-security-guideline with required sections', () => {
+    const content = readTemplate('guidelines/engineer-security-guideline.md')
+    expect(content).toContain('開発')
+    expect(content).toContain('アクセス')
+    expect(content).toContain('チェックリスト')
+  })
+})
+
+describe('ISMS Templates - Technical Security Policy', () => {
+  it('should have technical-security-policy.md', () => {
+    expect(existsSync(resolve(ismsDir, 'policies/technical-security-policy.md'))).toBe(true)
+  })
+
+  it('should have required sections', () => {
+    const content = readTemplate('policies/technical-security-policy.md')
+    expect(content).toContain('暗号')
+    expect(content).toContain('ネットワーク')
+    expect(content).toContain('開発')
+    expect(content).toContain('変更管理')
   })
 })
 

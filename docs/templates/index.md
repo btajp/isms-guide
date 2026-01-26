@@ -29,6 +29,16 @@ ISO/IEC 27001:2022 の規格本文で要求される文書です。
 | DOC-102 | [情報の許容される利用方針](/isms/policies/acceptable-use-policy) | A.5.10 |
 | DOC-106 | [アクセス制御方針](/isms/policies/access-control-policy) | A.5.15 |
 | DOC-107 | [サプライヤー管理方針](/isms/policies/supplier-security-policy) | A.5.19 |
+| POL-005 | [技術的セキュリティ方針](/isms/policies/technical-security-policy) | A.8.7-A.8.32 |
+
+### ガイドライン
+
+方針を具体的なルールに落とし込んだ実践文書です。
+
+| 文書ID | 文書名 | 対象者 |
+|--------|--------|--------|
+| GL-001 | [従業員向けセキュリティガイドライン](/isms/guidelines/employee-security-guideline) | 全従業員 |
+| GL-002 | [エンジニア向けセキュリティガイドライン](/isms/guidelines/engineer-security-guideline) | 開発者・運用者 |
 
 ### 手順書
 
@@ -76,6 +86,7 @@ docs/isms/
 ├── manual/          # ISMS マニュアル
 ├── soa/             # 適用宣言書
 ├── policies/        # 方針文書
+├── guidelines/      # ガイドライン
 ├── procedures/      # 手順書
 ├── plans/           # 計画書
 ├── registers/       # 台帳・一覧
