@@ -1,0 +1,34 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - Clean white -->
+  <rect width="1200" height="630" fill="#ffffff"/>
+
+  <!-- Top accent bar with brand color -->
+  <rect width="1200" height="8" fill="#3eaf7c"/>
+
+  <!-- Left accent line -->
+  <rect x="60" y="60" width="6" height="510" fill="#3eaf7c" rx="3"/>
+
+  <!-- Site name badge -->
+  <rect x="90" y="80" width="180" height="44" rx="8" fill="#3eaf7c" fill-opacity="0.1"/>
+  <text x="180" y="110" font-family="sans-serif" font-size="22" font-weight="600" fill="#3eaf7c" text-anchor="middle">{{siteName}}</text>
+
+  <!-- Category badge (if exists) -->
+  <text x="290" y="110" font-family="sans-serif" font-size="20" fill="#666666">{{category}}</text>
+
+  <!-- Title - 3 lines max -->
+  <text x="90" y="220" font-family="sans-serif" font-size="52" font-weight="700" fill="#1a1a1a">{{line1}}</text>
+  <text x="90" y="290" font-family="sans-serif" font-size="52" font-weight="700" fill="#1a1a1a">{{line2}}</text>
+  <text x="90" y="360" font-family="sans-serif" font-size="52" font-weight="700" fill="#1a1a1a">{{line3}}</text>
+
+  <!-- Footer bar -->
+  <rect x="0" y="540" width="1200" height="90" fill="#f8fafb"/>
+  <line x1="0" y1="540" x2="1200" y2="540" stroke="#e8eef3" stroke-width="1"/>
+
+  <!-- Footer text -->
+  <text x="90" y="595" font-family="sans-serif" font-size="24" fill="#6b7280">ISO/IEC 27001:2022</text>
+  <text x="1110" y="595" font-family="sans-serif" font-size="24" fill="#9ca3af" text-anchor="end">isms-guide.com</text>
+
+  <!-- Decorative elements -->
+  <circle cx="1080" cy="140" r="100" fill="#3eaf7c" fill-opacity="0.04"/>
+  <circle cx="1130" cy="200" r="140" fill="#3eaf7c" fill-opacity="0.02"/>
+</svg>

@@ -289,6 +289,7 @@ export default withMermaid(
         category: {
           byLevel: 2,
         },
+        maxCharactersPerLine: 24,
       })(siteConfig)
     }
   })
