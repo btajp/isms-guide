@@ -20,6 +20,7 @@
   "author": "btajp",
   "license": "MIT",
   "devDependencies": {
+    "@nolebase/vitepress-plugin-og-image": "^2.18.2",
     "@vitest/coverage-v8": "^4.0.18",
     "mermaid": "^11.12.2",
     "vitepress": "^1.6.4",
@@ -29,5 +30,8 @@
   },
   "engines": {
     "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5"
   }
 }
