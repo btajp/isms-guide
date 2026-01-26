@@ -297,9 +297,13 @@ export default withMermaid(
             { prefix: 'isms/policies', text: '方針' },
             { prefix: 'isms/procedures', text: '手順書' },
             { prefix: 'isms/records', text: '記録' },
+            { prefix: 'isms/plans', text: '計画書' },
+            { prefix: 'isms/registers', text: '台帳' },
+            { prefix: 'isms/soa', text: '適用宣言書' },
+            { prefix: 'isms/manual', text: 'マニュアル' },
           ],
         },
-        maxCharactersPerLine: 24,
+        maxCharactersPerLine: 12,
       })(siteConfig)
     }
   })
