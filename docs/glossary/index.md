@@ -1,3 +1,8 @@
+---
+prev: false
+next: false
+---
+
 # 用語集
 
 ISMS（情報セキュリティマネジメントシステム）に関する重要な用語を解説します。
@@ -104,9 +109,9 @@ Plan-Do-Check-Act サイクル。継続的改善のための管理手法。
 
 ```mermaid
 graph TD
-    P[Plan 計画] --> D[Do 実行]
-    D --> C[Check 評価]
-    C --> A[Act 改善]
+    P["Plan (計画)"] --> D["Do (実行)"]
+    D --> C["Check (評価)"]
+    C --> A["Act (改善)"]
     A --> P
 ```
 
