@@ -39,14 +39,44 @@
 }
 
 /* Header alignment: match content area padding */
+/* PC */
 @media (min-width: 960px) {
+  .VPNavBar .wrapper {
+    padding: 0 !important;
+  }
+
   .VPNavBar .container {
+    max-width: 1280px !important;
+    margin: 0 auto !important;
     padding: 0 64px !important;
   }
 
   .VPNavBarTitle .VPImage.logo {
     height: 37px !important;
     width: auto !important;
+    margin-top: 8px !important;
+  }
+}
+
+/* Tablet */
+@media (min-width: 640px) and (max-width: 959px) {
+  .VPNavBar .wrapper {
+    padding: 0 48px !important;
+  }
+
+  .VPNavBarTitle .VPImage.logo {
+    height: 32px !important;
+    width: auto !important;
+    margin-top: 8px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 639px) {
+  .VPNavBarTitle .VPImage.logo {
+    height: 28px !important;
+    width: auto !important;
+    margin-top: 8px !important;
   }
 }
 
