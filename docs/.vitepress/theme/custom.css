@@ -38,6 +38,18 @@
   display: none !important;
 }
 
+/* Header alignment: match content area padding */
+@media (min-width: 960px) {
+  .VPNavBar .container {
+    padding: 0 64px !important;
+  }
+
+  .VPNavBarTitle .VPImage.logo {
+    height: 37px !important;
+    width: auto !important;
+  }
+}
+
 /* Hero section: responsive top padding */
 .VPHero {
   padding-top: 100px !important;
