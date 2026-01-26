@@ -60,7 +60,7 @@ status: "draft"
 | A.5.20 | 供給者との合意における情報セキュリティの取扱い | O | リスク対応として必要 | {{実施状況}} | [サプライヤー管理方針](../policies/supplier-security-policy.md#_4-契約要件) |
 | A.5.21 | ICTサプライチェーンにおける情報セキュリティの管理 | O | リスク対応として必要 | {{実施状況}} | [サプライヤー管理方針](../policies/supplier-security-policy.md) |
 | A.5.22 | 供給者のサービス提供の監視、レビュー及び変更管理 | O | リスク対応として必要 | {{実施状況}} | [サプライヤー管理方針](../policies/supplier-security-policy.md#_5-監視・レビュー) |
-| A.5.23 | クラウドサービスの利用における情報セキュリティ | O | リスク対応として必要 | {{実施状況}} | [サプライヤー管理方針](../policies/supplier-security-policy.md) |
+| A.5.23 | クラウドサービスの利用における情報セキュリティ | O | リスク対応として必要 | {{実施状況}} | [サプライヤー管理方針](../policies/supplier-security-policy.md)、[管理策詳細](/controls/a-5-23) |
 | A.5.24 | 情報セキュリティインシデント管理の計画策定及び準備 | O | 規格要求事項 | {{実施状況}} | [インシデント対応手順](../procedures/incident-response-procedure.md) |
 | A.5.25 | 情報セキュリティ事象の評価及び決定 | O | リスク対応として必要 | {{実施状況}} | [インシデント対応手順](../procedures/incident-response-procedure.md#_4-分類と優先度) |
 | A.5.26 | 情報セキュリティインシデントへの対応 | O | リスク対応として必要 | {{実施状況}} | [インシデント対応手順](../procedures/incident-response-procedure.md#_5-対応手順) |
@@ -70,11 +70,11 @@ status: "draft"
 | A.5.30 | 事業継続のための ICT の備え | O | リスク対応として必要 | {{実施状況}} | [事業継続計画](../plans/business-continuity-plan.md#_6-ict継続計画) |
 | A.5.31 | 法的、法令及び規制要求事項の識別 | O | 法的要求事項 | {{実施状況}} | [法的・規制要求事項一覧](../registers/legal-requirements.md) |
 | A.5.32 | 知的財産権 | O | 法的要求事項 | {{実施状況}} | [法的・規制要求事項一覧](../registers/legal-requirements.md) |
-| A.5.33 | 記録の保護 | O | 法的要求事項 | {{実施状況}} | [ISMSマニュアル](../manual/isms-manual.md#_7-支援) |
+| A.5.33 | 記録の保護 | O | 法的要求事項 | {{実施状況}} | [ISMSマニュアル](../manual/isms-manual.md#_7-支援)、[管理策詳細](/controls/a-5-33) |
 | A.5.34 | プライバシー及び PII の保護 | O | 法的要求事項 | {{実施状況}} | [法的・規制要求事項一覧](../registers/legal-requirements.md) |
 | A.5.35 | 情報セキュリティの独立したレビュー | O | 規格要求事項 | {{実施状況}} | [内部監査手順](../procedures/internal-audit-procedure.md) |
 | A.5.36 | 情報セキュリティのための方針群、規則及び標準の順守 | O | 規格要求事項 | {{実施状況}} | [監視・測定記録](../records/monitoring-measurement-record.md) |
-| A.5.37 | 文書化した運用手順 | O | リスク対応として必要 | {{実施状況}} | [ISMSマニュアル](../manual/isms-manual.md#_7-支援) |
+| A.5.37 | 文書化した運用手順 | O | リスク対応として必要 | {{実施状況}} | [ISMSマニュアル](../manual/isms-manual.md#_7-支援)、[管理策詳細](/controls/a-5-37) |
 
 ### A.6 人的管理策（8項目）
 
