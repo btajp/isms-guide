@@ -1,11 +1,15 @@
-This project is dual-licensed under MIT License and CC0 1.0 Universal.
-You may choose either license.
+This project is dual-licensed:
+
+- Code (VitePress config, build scripts, etc.): MIT License
+- Content (documentation, templates, diagrams, etc.): CC BY-NC 4.0
+
+See LICENSE-CONTENT for content license details.
 
 ================================================================================
-MIT License
+MIT License (for code)
 ================================================================================
 
-Copyright (c) 2026 BTAJP
+Copyright (c) 2026 Business Technology Association Japan (BTAJP)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -24,17 +28,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-================================================================================
-CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
-================================================================================
-
-The person who associated a work with this deed has dedicated the work to the
-public domain by waiving all of his or her rights to the work worldwide under
-copyright law, including all related and neighboring rights, to the extent
-allowed by law.
-
-You can copy, modify, distribute and perform the work, even for commercial
-purposes, all without asking permission.
-
-For more information, see: https://creativecommons.org/publicdomain/zero/1.0/
