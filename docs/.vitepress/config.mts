@@ -111,6 +111,16 @@ export default withMermaid(
             ]
           }
         ],
+        '/isms/guidelines/': [
+          {
+            text: 'ガイドライン',
+            items: [
+              { text: '概要', link: '/isms/guidelines/' },
+              { text: '従業員向けセキュリティガイドライン', link: '/isms/guidelines/employee-security-guideline' },
+              { text: 'エンジニア向けセキュリティガイドライン', link: '/isms/guidelines/engineer-security-guideline' }
+            ]
+          }
+        ],
         '/about/': [
           {
             text: 'サイトについて',
@@ -157,7 +167,7 @@ export default withMermaid(
 
       // Footer
       footer: {
-        message: '<a href="https://github.com/btajp/isms-guide/blob/main/LICENSE">MIT</a> / <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.ja">CC BY-NC 4.0</a> | <a href="/about/copyright">著作権・出典について</a>',
+        message: '<a href="https://github.com/btajp/isms-guide/blob/main/LICENSE">MIT</a> / <a href="https://github.com/btajp/isms-guide/blob/main/LICENSE">CC BY-NC 4.0</a> | <a href="/about/copyright">著作権・出典について</a>',
         copyright: '&copy; 2026 <a href="https://btajp.org">Business Technology Association Japan</a>'
       },
 
