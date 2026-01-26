@@ -155,6 +155,79 @@ export default withMermaid(
             ]
           }
         ],
+        '/isms/manual/': [
+          {
+            text: 'マニュアル',
+            items: [
+              { text: 'ISMSマニュアル', link: '/isms/manual/isms-manual' }
+            ]
+          }
+        ],
+        '/isms/policies/': [
+          {
+            text: '方針',
+            items: [
+              { text: '情報セキュリティ方針', link: '/isms/policies/information-security-policy' },
+              { text: 'アクセス制御方針', link: '/isms/policies/access-control-policy' },
+              { text: '利用規定', link: '/isms/policies/acceptable-use-policy' },
+              { text: '供給者セキュリティ方針', link: '/isms/policies/supplier-security-policy' },
+              { text: '技術的セキュリティ方針', link: '/isms/policies/technical-security-policy' }
+            ]
+          }
+        ],
+        '/isms/procedures/': [
+          {
+            text: '手順書',
+            items: [
+              { text: 'リスクアセスメント手順', link: '/isms/procedures/risk-assessment-procedure' },
+              { text: 'インシデント対応手順', link: '/isms/procedures/incident-response-procedure' },
+              { text: '内部監査手順', link: '/isms/procedures/internal-audit-procedure' },
+              { text: '是正処置手順', link: '/isms/procedures/corrective-action-procedure' }
+            ]
+          }
+        ],
+        '/isms/plans/': [
+          {
+            text: '計画書',
+            items: [
+              { text: '情報セキュリティ目的', link: '/isms/plans/security-objectives' },
+              { text: 'リスク対応計画', link: '/isms/plans/risk-treatment-plan' },
+              { text: '事業継続計画', link: '/isms/plans/business-continuity-plan' }
+            ]
+          }
+        ],
+        '/isms/records/': [
+          {
+            text: '記録',
+            items: [
+              { text: 'リスクアセスメント報告書', link: '/isms/records/risk-assessment-report' },
+              { text: 'インシデント報告書', link: '/isms/records/incident-report' },
+              { text: '内部監査報告書', link: '/isms/records/internal-audit-report' },
+              { text: 'マネジメントレビュー議事録', link: '/isms/records/management-review-minutes' },
+              { text: '是正処置記録', link: '/isms/records/corrective-action-record' },
+              { text: '教育訓練記録', link: '/isms/records/training-record' },
+              { text: '監視測定記録', link: '/isms/records/monitoring-measurement-record' }
+            ]
+          }
+        ],
+        '/isms/registers/': [
+          {
+            text: '台帳',
+            items: [
+              { text: 'リスク台帳', link: '/isms/registers/risk-register' },
+              { text: '資産台帳', link: '/isms/registers/asset-inventory' },
+              { text: '法的要求事項台帳', link: '/isms/registers/legal-requirements' }
+            ]
+          }
+        ],
+        '/isms/soa/': [
+          {
+            text: '適用宣言書',
+            items: [
+              { text: '適用宣言書', link: '/isms/soa/statement-of-applicability' }
+            ]
+          }
+        ],
         '/about/': [
           {
             text: 'サイトについて',
