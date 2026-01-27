@@ -74,10 +74,12 @@ npm run build
 
 | サービス | 認証方法 | 特徴 |
 |----------|----------|------|
-| **Cloudflare Pages + Zero Trust Access** | IdP連携（Google, Okta, Azure AD等） | 無料枠あり、グローバルCDN |
+| **Cloudflare Pages + Zero Trust Access** | IdP連携（Google, Okta, Microsoft Entra ID等） | 無料枠あり、グローバルCDN |
 | **AWS Amplify + Cognito** | Cognito User Pool, SAML, OIDC | AWS エコシステムとの統合 |
 | **Vercel + Auth0** | Auth0 によるIdP連携 | シンプルな設定 |
-| **Azure Static Web Apps + Azure AD** | Azure AD | Microsoft 365 環境との親和性 |
+| **Azure Static Web Apps + Microsoft Entra ID** | Microsoft Entra ID | Microsoft 365 環境との親和性 |
+
+※ Microsoft Entra ID は Azure Active Directory（Azure AD）の後継サービスです。
 
 いずれの方法でも、ビルド成果物（`docs/.vitepress/dist`）を静的ホスティングし、その前段で認証を設定します。
 
