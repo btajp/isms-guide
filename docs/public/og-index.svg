@@ -1,4 +1,7 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700&amp;display=swap');
+  </style>
   <!-- Background - Clean white -->
   <rect width="1200" height="630" fill="#ffffff"/>
 
@@ -43,16 +46,16 @@
   </g>
 
   <!-- Line 1: ISO/IEC 27001:2022 対応 -->
-  <text x="600" y="290" font-family="M PLUS 1p, Noto Sans JP, sans-serif" font-size="34" font-weight="500" fill="#059669" text-anchor="middle">ISO/IEC 27001:2022 対応</text>
+  <text x="600" y="290" font-family="'M PLUS 1p', sans-serif" font-size="34" font-weight="500" fill="#059669" text-anchor="middle">ISO/IEC 27001:2022 対応</text>
 
   <!-- Line 2: 情報セキュリティマネジメントシステム -->
-  <text x="600" y="340" font-family="M PLUS 1p, Noto Sans JP, sans-serif" font-size="28" font-weight="700" fill="#1a1a1a" text-anchor="middle">情報セキュリティマネジメントシステム</text>
+  <text x="600" y="340" font-family="'M PLUS 1p', sans-serif" font-size="28" font-weight="700" fill="#1a1a1a" text-anchor="middle">情報セキュリティマネジメントシステム</text>
 
   <!-- Line 3: ISMS構築ガイド -->
-  <text x="600" y="420" font-family="M PLUS 1p, Noto Sans JP, sans-serif" font-size="56" font-weight="700" fill="#1a1a1a" text-anchor="middle">ISMS構築ガイド</text>
+  <text x="600" y="420" font-family="'M PLUS 1p', sans-serif" font-size="56" font-weight="700" fill="#1a1a1a" text-anchor="middle">ISMS構築ガイド</text>
 
   <!-- Footer line 1: URL -->
-  <text x="600" y="538" font-family="M PLUS 1p, Noto Sans JP, sans-serif" font-size="20" fill="#333333" text-anchor="middle">https://isms-guide.com</text>
+  <text x="600" y="538" font-family="'M PLUS 1p', sans-serif" font-size="20" fill="#333333" text-anchor="middle">https://isms-guide.com</text>
 
   <!-- Footer line 2: CC BY-NC 4.0 icons (official paths, 30px) -->
   <g transform="translate(587, 563)">
@@ -72,9 +75,9 @@
     </g>
 
     <!-- Text label -->
-    <text x="0" y="7" font-family="M PLUS 1p, Noto Sans JP, sans-serif" font-size="18" font-weight="600" fill="#333333">CC BY-NC 4.0</text>
+    <text x="0" y="7" font-family="'M PLUS 1p', sans-serif" font-size="18" font-weight="600" fill="#333333">CC BY-NC 4.0</text>
   </g>
 
   <!-- Footer line 3: Copyright -->
-  <text x="600" y="602" font-family="M PLUS 1p, Noto Sans JP, sans-serif" font-size="20" fill="#333333" text-anchor="middle">2026 Business Technology Association Japan</text>
+  <text x="600" y="602" font-family="'M PLUS 1p', sans-serif" font-size="20" fill="#333333" text-anchor="middle">2026 Business Technology Association Japan</text>
 </svg>
