@@ -115,6 +115,9 @@ npm test
 
 Issue や Pull Request を歓迎します。
 
+- バグや機能要望、コンテンツの誤りは[ISSUE](https://github.com/btajp/isms-guide/issues)へ
+- 質問や議論は[情シスSlack](https://corp-engr.jp)の #topic-isms-guide チャンネルをご利用ください
+
 ## メンテナー
 
 [一般社団法人日本ビジネステクノロジー協会（BTAJP）](https://btajp.org)
