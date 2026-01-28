@@ -37,7 +37,6 @@
 .VPNavBar {
   z-index: 30;
   background-color: #ffffff !important;
-  border-bottom: 1px solid var(--vp-c-divider);
 }
 
 .dark .VPNavBar {
@@ -67,6 +66,7 @@
     max-width: 1280px !important;
     margin: 0 auto !important;
     padding: 0 64px !important;
+    border-bottom: 1px solid var(--vp-c-divider);
   }
 
   .VPNavBarTitle .VPImage.logo {
@@ -80,6 +80,7 @@
 @media (min-width: 640px) and (max-width: 959px) {
   .VPNavBar .wrapper {
     padding: 0 48px !important;
+    border-bottom: 1px solid var(--vp-c-divider);
   }
 
   .VPNavBarTitle .VPImage.logo {
@@ -91,6 +92,10 @@
 
 /* Mobile */
 @media (max-width: 639px) {
+  .VPNavBar .wrapper {
+    border-bottom: 1px solid var(--vp-c-divider);
+  }
+
   .VPNavBarTitle .VPImage.logo {
     height: 28px !important;
     width: auto !important;
