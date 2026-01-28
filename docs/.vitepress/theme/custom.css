@@ -180,22 +180,10 @@ html body .VPSidebar > div {
   display: none !important;
 }
 
-/* Content area - prepare for pseudo-element */
-.VPDoc {
-  position: relative;
-}
-
-/* Add vertical line from header to aside using VPDoc pseudo-element */
+/* Keep divider aligned with the actual aside column */
 @media (min-width: 960px) {
-  .VPDoc.has-aside::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 288px;
-    width: 1px;
-    height: 100%;
-    background: var(--vp-c-divider);
-    pointer-events: none;
+  .VPDoc.has-aside .aside {
+    border-left: 1px solid var(--vp-c-divider);
   }
 }
 
