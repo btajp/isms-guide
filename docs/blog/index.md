@@ -2,7 +2,6 @@
 title: ブログ
 description: ISMS構築に役立つTips、審査対応のポイント、規格改訂情報などを発信
 layout: page
-sidebar: false
 ---
 
 <script setup>
