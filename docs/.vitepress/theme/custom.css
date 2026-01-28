@@ -31,6 +31,9 @@
   --vp-home-hero-name-color: transparent;
   /* ISMS: #059669 (0-45%), Guide: #10B981 (45-100%) */
   --vp-home-hero-name-background: linear-gradient(90deg, #059669 0%, #059669 45%, #10B981 45%, #10B981 100%);
+
+  /* Remove sidebar border */
+  --vp-sidebar-border-color: transparent;
 }
 
 /* Header z-index: ensure header is above sidebar */
@@ -43,11 +46,108 @@
   background-color: #1b1b1f !important;
 }
 
-/* Sidebar: start below header */
-.VPSidebar {
+/* Header border */
+.VPNav {
+  border-bottom: 1px solid var(--vp-c-divider) !important;
+}
+
+/* CRITICAL: Completely hide divider - ULTIMATE SPECIFICITY */
+html body .VPNav .divider,
+html body .VPNav div.divider,
+html body .VPNavBar .divider,
+html body .VPNavBar div.divider,
+html body div.divider,
+html body .divider,
+.divider.divider.divider,
+.VPNavBar .divider-line,
+.divider-line {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  width: 0 !important;
+  max-width: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+/* Remove all potential borders at Y=64px */
+.VPNav::after,
+.VPNavBar::after,
+.Layout > *:first-child::after {
+  display: none !important;
+}
+
+
+/* LEFT SIDEBAR - MAXIMUM SPECIFICITY border removal */
+html body aside.VPSidebar,
+.VPSidebar.VPSidebar.VPSidebar {
   top: var(--vp-nav-height, 64px) !important;
   height: calc(100vh - var(--vp-nav-height, 64px)) !important;
-  border-right: 1px solid var(--vp-c-divider);
+  border: 0 !important;
+  border-width: 0 !important;
+  border-style: none !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+html body .VPSidebar::before,
+html body .VPSidebar::after,
+.VPSidebar.VPSidebar::before,
+.VPSidebar.VPSidebar::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Remove border from sidebar nav wrapper - ALL MEDIA QUERIES */
+html body .VPSidebar .nav,
+html body .VPSidebar > div {
+  border-top: 0 !important;
+  border-width: 0 !important;
+}
+
+/* SOLUTION: Remove VitePress sidebar group divider line */
+.VPSidebar .group + .group {
+  border-top: none !important;
+  padding-top: 0 !important;
+}
+
+/* CRITICAL: Force remove ALL borders in viewport */
+@media (min-width: 960px) {
+  .VPSidebar {
+    border-top: 0 !important;
+    border: 0 !important;
+  }
+
+  .VPSidebar .nav {
+    border-top: 0 !important;
+  }
+
+  /* Remove VPLocalNav border */
+  .VPLocalNav {
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    display: none !important;
+  }
+
+  /* Remove any layout borders */
+  .Layout,
+  .VPContent {
+    border-top: 0 !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .VPSidebar {
+    border-top: 0 !important;
+    border: 0 !important;
+  }
+
+  .VPLocalNav {
+    display: none !important;
+  }
 }
 
 /* Fix curtain element that penetrates header */
@@ -60,20 +160,28 @@
   display: none !important;
 }
 
-/* Header alignment: match content area padding */
+/* Content area - prepare for pseudo-element */
+.VPDoc {
+  position: relative;
+}
+
+/* Add vertical line from header to aside using VPDoc pseudo-element */
+@media (min-width: 960px) {
+  .VPDoc.has-aside::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 288px;
+    width: 1px;
+    height: 100%;
+    background: var(--vp-c-divider);
+    pointer-events: none;
+  }
+}
+
+/* Logo size adjustments */
 /* PC */
 @media (min-width: 960px) {
-  .VPNavBar .wrapper {
-    padding: 0 !important;
-  }
-
-  .VPNavBar .container {
-    max-width: 1280px !important;
-    margin: 0 auto !important;
-    padding: 0 64px !important;
-    border-bottom: 1px solid var(--vp-c-divider);
-  }
-
   .VPNavBarTitle .VPImage.logo {
     height: 37px !important;
     width: auto !important;
@@ -83,11 +191,6 @@
 
 /* Tablet */
 @media (min-width: 640px) and (max-width: 959px) {
-  .VPNavBar .wrapper {
-    padding: 0 48px !important;
-    border-bottom: 1px solid var(--vp-c-divider);
-  }
-
   .VPNavBarTitle .VPImage.logo {
     height: 32px !important;
     width: auto !important;
@@ -97,10 +200,6 @@
 
 /* Mobile */
 @media (max-width: 639px) {
-  .VPNavBar .wrapper {
-    border-bottom: 1px solid var(--vp-c-divider);
-  }
-
   .VPNavBarTitle .VPImage.logo {
     height: 28px !important;
     width: auto !important;
