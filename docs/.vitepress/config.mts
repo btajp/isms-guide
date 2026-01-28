@@ -247,14 +247,7 @@ export default withMermaid(
             ]
           }
         ],
-        '/blog/': [
-          {
-            text: 'ブログ',
-            items: [
-              { text: '記事一覧', link: '/blog/' }
-            ]
-          }
-        ]
+        // No sidebar for blog pages
       },
 
       // Search
