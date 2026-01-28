@@ -197,6 +197,15 @@ html body .VPSidebar > div {
   }
 }
 
+@media (min-width: 960px) {
+  .VPContent.has-sidebar .VPPage > div {
+    max-width: 688px;
+    margin: 0 auto;
+    width: 100%;
+    transform: translateX(calc(var(--vp-sidebar-width) * -0.5));
+  }
+}
+
 /* Keep divider aligned with the aside and reach the header */
 @media (min-width: 960px) {
   .VPDoc.has-aside .aside::before {
