@@ -70,11 +70,34 @@ function loadConfig(configPath) {
   } else if (ext === '.yaml' || ext === '.yml') {
     // 簡易的なYAMLパーサー（外部依存なし）
     const config = {}
-    content.split('\n').forEach((line) => {
-      const match = line.match(/^(\w+):\s*["']?(.+?)["']?\s*$/)
-      if (match) {
-        config[match[1]] = match[2]
+    content.split(/\r?\n/).forEach((line) => {
+      const trimmed = line.trim()
+      if (!trimmed || trimmed.startsWith('#')) {
+        return
       }
+
+      const match = line.match(/^\s*([^:#]+?)\s*:\s*(.*)\s*$/)
+      if (!match) {
+        return
+      }
+
+      const key = match[1].trim()
+      let value = match[2].trim()
+      if (!value) {
+        config[key] = ''
+        return
+      }
+
+      const isQuoted =
+        (value.startsWith('"') && value.endsWith('"')) ||
+        (value.startsWith("'") && value.endsWith("'"))
+      if (isQuoted) {
+        value = value.slice(1, -1)
+      } else {
+        value = value.split(/\s+#/)[0].trim()
+      }
+
+      config[key] = value
     })
     return { ...DEFAULT_PLACEHOLDERS, ...config }
   }

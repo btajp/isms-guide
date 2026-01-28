@@ -1,12 +1,94 @@
 import { defineConfig, HeadConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 import { buildEndGenerateOpenGraphImages } from '@nolebase/vitepress-plugin-og-image/vitepress'
-import { readFileSync } from 'node:fs'
+import { readFileSync, readdirSync } from 'node:fs'
 import { resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const mplus1p = readFileSync(resolve(__dirname, 'fonts/MPLUS1p-Bold.ttf'))
+
+const blogSidebarItems = getLatestBlogPosts(10)
+
+function getLatestBlogPosts(limit: number) {
+  const postsDir = resolve(__dirname, '..', 'blog', 'posts')
+  let files: string[] = []
+  try {
+    files = readdirSync(postsDir).filter((file) => file.endsWith('.md'))
+  } catch {
+    return []
+  }
+
+  const posts = files
+    .map((file) => {
+      const content = readFileSync(resolve(postsDir, file), 'utf-8')
+      const frontmatter = parseFrontmatter(content)
+      if (frontmatter.published === false) {
+        return null
+      }
+      const date = new Date(frontmatter.date || 0)
+      return {
+        title: frontmatter.title || file.replace(/\.md$/, ''),
+        date: Number.isNaN(date.getTime()) ? 0 : date.getTime(),
+        link: `/blog/posts/${file.replace(/\.md$/, '')}`
+      }
+    })
+    .filter((post) => post)
+    .sort((a, b) => b!.date - a!.date)
+    .slice(0, limit)
+    .map((post) => ({ text: post!.title, link: post!.link }))
+
+  return posts
+}
+
+function parseFrontmatter(content: string) {
+  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/)
+  if (!match) {
+    return {}
+  }
+
+  const frontmatter: Record<string, string | boolean> = {}
+  match[1].split(/\r?\n/).forEach((line) => {
+    const trimmed = line.trim()
+    if (!trimmed || trimmed.startsWith('#')) {
+      return
+    }
+
+    const separatorIndex = trimmed.indexOf(':')
+    if (separatorIndex === -1) {
+      return
+    }
+
+    const key = trimmed.slice(0, separatorIndex).trim()
+    let value = trimmed.slice(separatorIndex + 1).trim()
+    if (!value) {
+      frontmatter[key] = ''
+      return
+    }
+
+    const isQuoted =
+      (value.startsWith('"') && value.endsWith('"')) ||
+      (value.startsWith("'") && value.endsWith("'"))
+    if (isQuoted) {
+      value = value.slice(1, -1)
+    } else {
+      value = value.split(/\s+#/)[0].trim()
+    }
+
+    if (value.toLowerCase() === 'true') {
+      frontmatter[key] = true
+      return
+    }
+    if (value.toLowerCase() === 'false') {
+      frontmatter[key] = false
+      return
+    }
+
+    frontmatter[key] = value
+  })
+
+  return frontmatter
+}
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid(
@@ -249,10 +331,8 @@ export default withMermaid(
         ],
         '/blog/': [
           {
-            text: 'ブログ',
-            items: [
-              { text: '記事一覧', link: '/blog/' }
-            ]
+            text: '最新記事',
+            items: blogSidebarItems
           }
         ]
       },
