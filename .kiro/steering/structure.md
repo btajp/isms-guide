@@ -28,7 +28,7 @@ isms-guide/
 │
 ├── guide/                     # フォーク・カスタマイズ手順
 │
-└── DEVELOPMENT_PLAN.md        # 開発計画書
+└── PLAN-EXPORT.md              # 開発計画書（エクスポート）
 ```
 
 ## Site URL Design
@@ -54,8 +54,8 @@ isms-guide/
 
 ### 相互リンク設計
 
-- テンプレート → 解説: 見出し内にインラインリンク（例: `## 3. [リスクアセスメント](/requirements/6-1-2)プロセス`）
-- 解説 → テンプレート: 「関連テンプレート」セクションにリンク一覧
+- テンプレート → 解説: 見出し直下の「関連」行でリンク（例: `> 関連: [6.1.2](/requirements/6-1-2)`）
+- 解説 → テンプレート: 「関連テンプレート」行にリンク一覧
 
 ## Fork Usage Image
 
@@ -80,9 +80,9 @@ isms-guide/
 
 ### Files
 
-- ファイル名: `kebab-case`（例: `risk-assessment.md`）
-- 箇条番号を含む場合: `6-1-2-risk-assessment.md`
-- 管理策番号を含む場合: `a-5-23-cloud-security.md`
+- ファイル名: `kebab-case`（例: `risk-assessment-procedure.md`）
+- 箇条番号を含む場合: `6-1-2.md`
+- 管理策番号を含む場合: `a-5-23.md`
 
 ### Directories
 

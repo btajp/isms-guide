@@ -1,58 +1,73 @@
 # Tasks: OGP画像自動生成
 
-## Task 1: vitepress-plugin-og-imageのインストール
+## Task 1: @nolebase/vitepress-plugin-og-image の導入
 
 ### Description
-OGP画像生成用のVitePressプラグインをインストールする。
+OGP画像生成用プラグインを導入する。
 
 ### Commands
 ```bash
-npm install vitepress-plugin-og-image -D
+npm install @nolebase/vitepress-plugin-og-image -D
 ```
 
 ### Acceptance Criteria
-- [ ] package.jsonにvitepress-plugin-og-imageが追加される
+- [x] package.jsonに`@nolebase/vitepress-plugin-og-image`が追加される
 
 ---
 
-## Task 2: OgImagePluginの設定
+## Task 2: buildEnd でOGP画像生成を実行
 
 ### Description
-config.mtsにOgImagePluginを設定し、buildEndフックで画像を生成する。
+VitePressの`buildEnd`でOGP画像を生成する。
 
 ### Files to Modify
 - `docs/.vitepress/config.mts`
 
 ### Implementation
 ```typescript
-import { OgImagePlugin } from 'vitepress-plugin-og-image'
+import { buildEndGenerateOpenGraphImages } from '@nolebase/vitepress-plugin-og-image/vitepress'
 
-const ogImagePlugin = new OgImagePlugin({
-  destDir: '/og',
+export default defineConfig({
+  // ...
+  async buildEnd(siteConfig) {
+    await buildEndGenerateOpenGraphImages({
+      baseUrl: 'https://isms-guide.com',
+      category: {
+        byPathPrefix: [
+          { prefix: 'controls', text: '管理策' },
+          { prefix: 'requirements', text: '要求事項' },
+          { prefix: 'templates', text: 'テンプレート' },
+          { prefix: 'glossary', text: '用語集' },
+          { prefix: 'about', text: 'サイト情報' },
+          { prefix: 'isms/guidelines', text: 'ガイドライン' },
+          { prefix: 'isms/policies', text: '方針' },
+          { prefix: 'isms/procedures', text: '手順書' },
+          { prefix: 'isms/records', text: '記録' },
+          { prefix: 'isms/plans', text: '計画書' },
+          { prefix: 'isms/registers', text: '台帳' },
+          { prefix: 'isms/soa', text: '適用宣言書' },
+          { prefix: 'isms/manual', text: 'マニュアル' },
+          { prefix: 'blog', text: 'ブログ' },
+        ],
+      },
+      maxCharactersPerLine: 12,
+      svgFontBuffers: [mplus1p],
+    })(siteConfig)
+  }
 })
-
-export default withMermaid(
-  defineConfig({
-    // ... 既存設定
-
-    buildEnd(siteConfig) {
-      ogImagePlugin.buildEnd(siteConfig)
-    }
-  })
-)
 ```
 
 ### Acceptance Criteria
-- [ ] OgImagePluginがインポートされる
-- [ ] destDirが'/og'に設定される
-- [ ] buildEndフックで画像生成が呼び出される
+- [x] buildEndでOGP画像生成が呼び出される
+- [x] カテゴリラベルがパスプレフィックスで付与される
+- [x] フォントバッファが指定される
 
 ---
 
-## Task 3: transformHeadにog:image設定を追加
+## Task 3: transformHead に og:image / twitter:image を追加
 
 ### Description
-既存のtransformHead関数にog:imageとtwitter:imageメタタグを追加する。
+ページごとにOGP画像のメタタグを出力する。
 
 ### Files to Modify
 - `docs/.vitepress/config.mts`
@@ -65,12 +80,12 @@ transformHead({ pageData }) {
 
   // ... 既存のOGP設定
 
-  // og:image
-  const ogImageMeta = ogImagePlugin.transformHead({ pageData })
-  head.push(...ogImageMeta)
+  const ogImagePath = pageData.relativePath
+    .replace(/\.md$/, '.png')
+    .replace(/([^/]+)\.png$/, 'og-$1.png')
+  const ogImageUrl = `${siteUrl}/${ogImagePath}`
 
-  // twitter:image (og:imageと同じURLを使用)
-  const ogImageUrl = `${siteUrl}/og/${pageData.relativePath.replace(/\.md$/, '.png').replace(/index\.png$/, 'index.png')}`
+  head.push(['meta', { property: 'og:image', content: ogImageUrl }])
   head.push(['meta', { name: 'twitter:image', content: ogImageUrl }])
 
   return head
@@ -78,8 +93,8 @@ transformHead({ pageData }) {
 ```
 
 ### Acceptance Criteria
-- [ ] AC-1.4: og:imageメタタグが設定される
-- [ ] AC-1.5: twitter:imageメタタグが設定される
+- [x] og:imageメタタグが設定される
+- [x] twitter:imageメタタグが設定される
 
 ---
 
@@ -97,12 +112,12 @@ npm run build
 
 2. 画像ディレクトリ確認
 ```bash
-ls -la docs/.vitepress/dist/og/
+ls -la docs/.vitepress/dist | rg '^og-'
 ```
 
 3. 画像仕様確認
 ```bash
-file docs/.vitepress/dist/og/index.png
+file docs/.vitepress/dist/og-index.png
 ```
 
 4. メタタグ確認
@@ -111,7 +126,7 @@ grep -E 'og:image|twitter:image' docs/.vitepress/dist/index.html
 ```
 
 ### Expected Output
-- `/og/`ディレクトリに各ページのPNG画像が生成される
+- ルートや各ディレクトリに `og-*.png` が生成される
 - 画像サイズは1200x630px
 - HTMLに`og:image`と`twitter:image`メタタグが含まれる
 
@@ -119,14 +134,14 @@ grep -E 'og:image|twitter:image' docs/.vitepress/dist/index.html
 - [ ] AC-1.1: OGP画像が自動生成される
 - [ ] AC-2.1: 画像サイズが1200x630px
 - [ ] AC-2.2: 画像形式がPNG
-- [ ] AC-2.3: 画像が`/og/`ディレクトリに出力される
+- [ ] AC-2.3: `og-*.png` が出力される
 
 ---
 
 ## Implementation Order
 
-1. **Task 1**: プラグインインストール（2分）
-2. **Task 2**: OgImagePlugin設定（10分）
+1. **Task 1**: プラグイン導入（2分）
+2. **Task 2**: buildEnd設定（10分）
 3. **Task 3**: transformHead更新（5分）
 4. **Task 4**: ビルド検証（10分）
 

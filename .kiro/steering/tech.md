@@ -29,7 +29,7 @@
 | 項目 | 技術 |
 |------|------|
 | ホスティング | Cloudflare Pages |
-| ドメイン | isms-guide.jp（取得予定） |
+| ドメイン | isms-guide.com |
 | バージョン管理 | GitHub |
 | CI/CD | Cloudflare Pages（GitHub連携による自動デプロイ） |
 
