@@ -50,6 +50,11 @@
   border-right: 1px solid var(--vp-c-divider);
 }
 
+/* Fix curtain element that penetrates header */
+.VPSidebar .curtain {
+  display: none !important;
+}
+
 /* Hide default VitePress footer to use custom footer on all pages */
 .VPFooter {
   display: none !important;
