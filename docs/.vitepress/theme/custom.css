@@ -180,6 +180,23 @@ html body .VPSidebar > div {
   display: none !important;
 }
 
+/* Add padding to custom page layout (e.g., /blog) to avoid sticking to nav/sidebars */
+.VPPage {
+  padding: 32px 24px 96px;
+}
+
+@media (min-width: 768px) {
+  .VPPage {
+    padding: 48px 32px 128px;
+  }
+}
+
+@media (min-width: 960px) {
+  .VPPage {
+    padding: 48px 32px 96px;
+  }
+}
+
 /* Keep divider aligned with the aside and reach the header */
 @media (min-width: 960px) {
   .VPDoc.has-aside .aside::before {
