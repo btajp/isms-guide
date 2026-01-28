@@ -14,7 +14,7 @@ status: "draft"
 
 # 適用宣言書（Statement of Applicability）
 
-> 関連: [6.1.3 d) 適用宣言書](/requirements/6-1-3)、[管理策一覧](/controls/)
+> 関連: [6.1.3 d) 適用宣言書](/requirements/6-1-3#d-soa)、[管理策一覧](/controls/)
 
 ## 1. 目的
 
