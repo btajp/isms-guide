@@ -33,6 +33,24 @@
   --vp-home-hero-name-background: linear-gradient(90deg, #059669 0%, #059669 45%, #10B981 45%, #10B981 100%);
 }
 
+/* Header z-index: ensure header is above sidebar */
+.VPNavBar {
+  z-index: 30;
+  background-color: #ffffff !important;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.dark .VPNavBar {
+  background-color: #1b1b1f !important;
+}
+
+/* Sidebar: start below header */
+.VPSidebar {
+  top: var(--vp-nav-height, 64px) !important;
+  height: calc(100vh - var(--vp-nav-height, 64px)) !important;
+  border-right: 1px solid var(--vp-c-divider);
+}
+
 /* Hide default VitePress footer to use custom footer on all pages */
 .VPFooter {
   display: none !important;
