@@ -48,7 +48,7 @@
   - footer, outline, docFooter 等の翻訳
   - _Requirements: AC-1.1_
 
-- [ ] **Task 2.8**: ダークモードを確認する
+- [x] **Task 2.8**: ダークモードを確認する
   - VitePress デフォルトのダークモード動作確認
   - _Requirements: AC-2.2_
 
@@ -70,7 +70,7 @@
   - 用語集ページの骨格
   - _Requirements: AC-1.1_
 
-- [ ] **Task 3.5**: docs/public/ に静的アセットを配置する
+- [x] **Task 3.5**: docs/public/ に静的アセットを配置する
   - favicon.ico, og-image.png（プレースホルダー）
   - _Requirements: NFR-7_
 

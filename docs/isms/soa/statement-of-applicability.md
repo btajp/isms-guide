@@ -14,7 +14,7 @@ status: "draft"
 
 # 適用宣言書（Statement of Applicability）
 
-> 関連: [箇条 6.1.3 d) 適用宣言書](/requirements/6-1-3)、[管理策一覧](/controls/)
+> 関連: [6.1.3 d) 適用宣言書](/requirements/6-1-3#d-soa)、[管理策一覧](/controls/)
 
 ## 1. 目的
 
@@ -33,6 +33,8 @@ status: "draft"
 | P | 部分的に適用する |
 
 ## 4. 管理策の適用状況
+
+> 関連: [6.1.3 情報セキュリティリスク対応](/requirements/6-1-3)
 
 ### A.5 組織的管理策（37項目）
 

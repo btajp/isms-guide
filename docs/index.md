@@ -15,7 +15,7 @@ hero:
 
 features:
   - icon: "1"
-    title: 要求事項（箇条4-10）
+    title: 要求事項
     details: ISO/IEC 27001:2022 の要求事項を分かりやすく解説します。
     link: /requirements/
   - icon: "2"

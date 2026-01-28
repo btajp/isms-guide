@@ -1,99 +1,96 @@
 # Tasks: Blog/Column Feature
 
-## Task 1: Install vitepress-plugin-blog
+## Task 1: 記事データローダーを用意する
 
 ### Description
-ブログプラグインをインストールする
+`createContentLoader` で記事一覧データを生成する。
 
 ### Files to modify
-- `package.json`
+- `docs/blog/posts.data.ts`
 
 ### Acceptance criteria
-- [ ] `npm install vitepress-plugin-blog` が成功
-- [ ] package.json に依存関係が追加される
+- [x] `createContentLoader` で `blog/posts/*.md` を読み込む
+- [x] 公開フラグでフィルタリングできる
+- [x] 日付降順でソートされる
 
 ---
 
-## Task 2: Configure blog plugin in VitePress
+## Task 2: 記事一覧ページを作成する
 
 ### Description
-config.mts に blogPlugin を追加し、テーマを設定する
+ブログ一覧ページを作成し、タグでフィルタリングできるようにする。
 
 ### Files to modify
-- `docs/.vitepress/config.mts`
-- `docs/.vitepress/theme/index.ts` (新規作成)
-
-### Acceptance criteria
-- [ ] blogPlugin が vite.plugins に追加される
-- [ ] theme/index.ts で withBlogTheme が設定される
-- [ ] 開発サーバーが正常に起動する
-
----
-
-## Task 3: Create blog directory structure
-
-### Description
-ブログ用のディレクトリ構造を作成する
-
-### Files to create
 - `docs/blog/index.md`
-- `docs/blog/posts/` (ディレクトリ)
 
 ### Acceptance criteria
-- [ ] docs/blog/index.md が BlogIndex コンポーネントを使用
-- [ ] docs/blog/posts/ ディレクトリが存在
+- [x] 記事一覧が表示される
+- [x] タグフィルタが利用できる
 
 ---
 
-## Task 4: Update navigation
+## Task 3: ブログディレクトリ構造を作成する
 
 ### Description
-ヘッダーナビとサイドバーにブログを追加する
-
-### Files to modify
-- `docs/.vitepress/config.mts`
-
-### Acceptance criteria
-- [ ] nav に「ブログ」リンクが追加される
-- [ ] sidebar に '/blog/' 設定が追加される
-- [ ] ヘッダーからブログページにアクセスできる
-
----
-
-## Task 5: Update OGP image generation
-
-### Description
-ブログ記事用の OGP 画像生成設定を追加する
-
-### Files to modify
-- `docs/.vitepress/config.mts`
-
-### Acceptance criteria
-- [ ] category.byPathPrefix に 'blog' が追加される
-- [ ] ブログ記事の OGP 画像が生成される
-
----
-
-## Task 6: Create sample blog posts
-
-### Description
-サンプル記事を2本作成する
+ブログの投稿ディレクトリとサンプル記事を作成する。
 
 ### Files to create
+- `docs/blog/posts/` (ディレクトリ)
 - `docs/blog/posts/2026-01-26-getting-started-with-isms.md`
-- `docs/blog/posts/2026-01-26-risk-assessment-tips.md`
+- `docs/blog/posts/2026-01-27-risk-assessment-tips.md`
+- `docs/blog/posts/2026-01-28-what-is-isms.md`
 
 ### Acceptance criteria
-- [ ] frontmatter が正しく設定されている（blogPost: true）
-- [ ] 記事一覧ページに表示される
-- [ ] タグが設定されている
+- [x] frontmatter が正しく設定されている（blogPost: true）
+- [x] 記事一覧ページに表示される
+- [x] タグが設定されている
 
 ---
 
-## Task 7: Verify build and functionality
+## Task 4: ナビゲーションを追加する
 
 ### Description
-ビルドと機能動作を確認する
+ヘッダーナビとサイドバーにブログを追加する。
+
+### Files to modify
+- `docs/.vitepress/config.mts`
+
+### Acceptance criteria
+- [x] nav に「ブログ」リンクが追加される
+- [x] sidebar に '/blog/' 設定が追加される
+
+---
+
+## Task 5: OGP画像生成のカテゴリにブログを追加する
+
+### Description
+OGP 画像生成設定に blog のカテゴリを追加する。
+
+### Files to modify
+- `docs/.vitepress/config.mts`
+
+### Acceptance criteria
+- [x] category.byPathPrefix に 'blog' が追加される
+
+---
+
+## Task 6: 機能拡張（未完）
+
+### Description
+ブログ機能として未実装の項目を追加する。
+
+### Acceptance criteria
+- [ ] ページネーション
+- [ ] 前後記事ナビゲーション
+- [ ] 読了時間表示
+- [ ] RSS/Atom フィード
+
+---
+
+## Task 7: ビルドと動作確認
+
+### Description
+ビルドと動作を確認する。
 
 ### Commands
 - `npm run build`
@@ -102,10 +99,7 @@ config.mts に blogPlugin を追加し、テーマを設定する
 ### Acceptance criteria
 - [ ] ビルドが成功する
 - [ ] 記事一覧ページが表示される
-- [ ] タグフィルタリングが動作する
 - [ ] 記事詳細ページが表示される
-- [ ] 前後記事へのナビゲーションが動作する
-- [ ] OGP 画像が生成される
 
 ---
 
@@ -119,11 +113,11 @@ Task 1 → Task 2 → Task 3 → Task 4 → Task 5 → Task 6 → Task 7
 
 | Task | Effort |
 |------|--------|
-| Task 1 | 5 min |
+| Task 1 | 10 min |
 | Task 2 | 15 min |
 | Task 3 | 10 min |
 | Task 4 | 10 min |
 | Task 5 | 5 min |
-| Task 6 | 20 min |
-| Task 7 | 15 min |
-| **Total** | **~80 min** |
+| Task 6 | 60 min |
+| Task 7 | 20 min |
+| **Total** | **~130 min** |

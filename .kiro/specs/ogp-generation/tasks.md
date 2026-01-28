@@ -72,15 +72,15 @@ export default defineConfig({
 ```
 
 ### Acceptance Criteria
-- [ ] AC-1.1: og:titleがページごとに自動生成される
-- [ ] AC-1.2: og:descriptionがページごとに自動生成される
-- [ ] AC-1.3: og:urlがページごとに自動生成される
-- [ ] AC-1.4: frontmatterのtitleがog:titleに使用される
-- [ ] AC-1.5: frontmatterのdescriptionがog:descriptionに使用される
-- [ ] AC-1.6: titleがない場合はサイトデフォルトが使用される
-- [ ] AC-2.1: twitter:cardが生成される
-- [ ] AC-2.2: twitter:titleが生成される
-- [ ] AC-2.3: twitter:descriptionが生成される
+- [x] AC-1.1: og:titleがページごとに自動生成される
+- [x] AC-1.2: og:descriptionがページごとに自動生成される
+- [x] AC-1.3: og:urlがページごとに自動生成される
+- [x] AC-1.4: frontmatterのtitleがog:titleに使用される
+- [x] AC-1.5: frontmatterのdescriptionがog:descriptionに使用される
+- [x] AC-1.6: titleがない場合はサイトデフォルトが使用される
+- [x] AC-2.1: twitter:cardが生成される
+- [x] AC-2.2: twitter:titleが生成される
+- [x] AC-2.3: twitter:descriptionが生成される
 
 ---
 
