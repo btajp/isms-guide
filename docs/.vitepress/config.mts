@@ -16,10 +16,9 @@ export default withMermaid(
     lang: 'ja-JP',
 
     // Ignore dead links to pages not yet created
+    // Controls detail pages are partial; keep only this temporary ignore.
     ignoreDeadLinks: [
-      /^\/controls\/a-\d+-\d+$/,
-      /^\/requirements\/\d+-\d+(-\d+)?$/,
-      /^\/controls$/
+      /^\/controls\/a-\d+-\d+$/
     ],
 
     // Sitemap (Cloudflare Pages)
