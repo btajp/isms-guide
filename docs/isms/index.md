@@ -11,7 +11,6 @@ ISO/IEC 27001:2022 認証取得に必要な文書テンプレート集です。
 
 ```
 isms/
-├── README.md                 # このファイル
 ├── manual/                   # ISMS マニュアル
 │   └── isms-manual.md
 ├── soa/                      # 適用宣言書

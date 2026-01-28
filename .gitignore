@@ -36,3 +36,6 @@ PLAN.md
 
 # Workspace
 *.code-workspace
+
+# Claude Code local settings
+.claude/settings.local.json

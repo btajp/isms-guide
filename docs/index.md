@@ -74,10 +74,12 @@ ISMS Guide は、ISO/IEC 27001:2022 に基づく情報セキュリティマネ�
 
 | サービス | 認証方法 | 特徴 |
 |----------|----------|------|
-| **Cloudflare Pages + Zero Trust Access** | IdP連携（Google, Okta, Azure AD等） | 無料枠あり、グローバルCDN |
+| **Cloudflare Pages + Zero Trust Access** | IdP連携（Google, Okta, Microsoft Entra ID等） | 無料枠あり、グローバルCDN |
 | **AWS Amplify + Cognito** | Cognito User Pool, SAML, OIDC | AWS エコシステムとの統合 |
 | **Vercel + Auth0** | Auth0 によるIdP連携 | シンプルな設定 |
-| **Azure Static Web Apps + Azure AD** | Azure AD | Microsoft 365 環境との親和性 |
+| **Azure Static Web Apps + Microsoft Entra ID** | Microsoft Entra ID | Microsoft 365 環境との親和性 |
+
+※ Microsoft Entra ID は Azure Active Directory（Azure AD）の後継サービスです。
 
 静的サイトとして出力されるため、上記以外のホスティングサービスでも認証機能を組み合わせて利用可能です。
 
@@ -98,3 +100,11 @@ ISMS Guide は、ISO/IEC 27001:2022 に基づく情報セキュリティマネ�
 - **ISMS 文書テンプレートの公開** - ISMSマニュアル、適用宣言書（SoA）、手順書、記録類のテンプレート（現在鋭意作成中）
 - **文書自動生成機能** - テンプレートから組織ごとの文書一式を自動生成
 - **複数フォーマット対応** - Google Docs版、Word版、Notion版の制作
+
+## コントリビューション
+
+ISMS Guide はオープンソースプロジェクトです。皆さまのご協力をお待ちしています。
+
+- **Issue 報告** - 誤字脱字、内容の誤り、改善提案などは [GitHub Issues](https://github.com/btajp/isms-guide/issues) でお知らせください
+- **Pull Request** - ドキュメントの修正や新規コンテンツの追加を歓迎します
+- **Discussion** - ご質問やアイデアは [GitHub Discussions](https://github.com/btajp/isms-guide/discussions) でお気軽にどうぞ
