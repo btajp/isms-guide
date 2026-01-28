@@ -36,6 +36,21 @@
   --vp-sidebar-border-color: transparent;
 }
 
+/* Prevent content overflow from overlapping the aside divider */
+.vp-doc :is(p, li, td, th, a) {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.vp-doc table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.vp-doc pre {
+  overflow-x: auto;
+}
+
 /* Header z-index: ensure header is above sidebar */
 .VPNavBar {
   z-index: 30;
