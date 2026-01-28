@@ -51,6 +51,11 @@
   overflow-x: auto;
 }
 
+/* Allow doc content to shrink at larger breakpoints to avoid overlap when zoomed */
+.VPDoc.has-aside .content {
+  min-width: 0;
+}
+
 /* Header z-index: ensure header is above sidebar */
 .VPNavBar {
   z-index: 30;
