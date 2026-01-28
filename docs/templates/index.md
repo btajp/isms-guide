@@ -22,18 +22,18 @@ ISO/IEC 27001:2022 の規格本文で要求される文書です。
 
 | 文書ID | 文書名 | 対応箇条 |
 |--------|--------|----------|
-| DOC-000 | [ISMS マニュアル](/isms/manual/isms-manual) | 4.3, 4.4 |
-| DOC-004 | [適用宣言書](/isms/soa/statement-of-applicability) | 6.1.3 d) |
+| DOC-000 | [ISMS マニュアル](/isms/manual/isms-manual) | [4.3](/requirements/#4-3), [4.4](/requirements/#4-4) |
+| DOC-004 | [適用宣言書](/isms/soa/statement-of-applicability) | [6.1.3 d)](/requirements/6-1-3#d-soa) |
 
 ### 方針文書
 
 | 文書ID | 文書名 | 対応箇条/管理策 |
 |--------|--------|-----------------|
-| DOC-002 | [情報セキュリティ方針](/isms/policies/information-security-policy) | 5.2 |
-| DOC-102 | [情報の許容される利用方針](/isms/policies/acceptable-use-policy) | A.5.10 |
-| DOC-106 | [アクセス制御方針](/isms/policies/access-control-policy) | A.5.15 |
-| DOC-107 | [サプライヤー管理方針](/isms/policies/supplier-security-policy) | A.5.19 |
-| POL-005 | [技術的セキュリティ方針](/isms/policies/technical-security-policy) | A.8.7-A.8.32 |
+| DOC-002 | [情報セキュリティ方針](/isms/policies/information-security-policy) | [5.2](/requirements/#5-2) |
+| DOC-102 | [情報の許容される利用方針](/isms/policies/acceptable-use-policy) | [A.5.10](/controls/#a-5-10) |
+| DOC-106 | [アクセス制御方針](/isms/policies/access-control-policy) | [A.5.15](/controls/#a-5-15) |
+| DOC-107 | [サプライヤー管理方針](/isms/policies/supplier-security-policy) | [A.5.19](/controls/#a-5-19) |
+| POL-005 | [技術的セキュリティ方針](/isms/policies/technical-security-policy) | [A.8.7](/controls/#a-8-7)-[A.8.32](/controls/#a-8-32) |
 
 ### ガイドライン
 
@@ -48,26 +48,26 @@ ISO/IEC 27001:2022 の規格本文で要求される文書です。
 
 | 文書ID | 文書名 | 対応箇条 |
 |--------|--------|----------|
-| DOC-003 | [リスクアセスメント手順](/isms/procedures/risk-assessment-procedure) | 6.1.2 |
-| DOC-103 | [インシデント対応手順](/isms/procedures/incident-response-procedure) | A.5.24 |
-| DOC-201 | [内部監査手順](/isms/procedures/internal-audit-procedure) | 9.2 |
-| DOC-202 | [是正処置手順](/isms/procedures/corrective-action-procedure) | 10.2 |
+| DOC-003 | [リスクアセスメント手順](/isms/procedures/risk-assessment-procedure) | [6.1.2](/requirements/6-1-2) |
+| DOC-103 | [インシデント対応手順](/isms/procedures/incident-response-procedure) | [A.5.24](/controls/#a-5-24) |
+| DOC-201 | [内部監査手順](/isms/procedures/internal-audit-procedure) | [9.2](/requirements/9-2) |
+| DOC-202 | [是正処置手順](/isms/procedures/corrective-action-procedure) | [10.2](/requirements/#10-2) |
 
 ### 計画書
 
 | 文書ID | 文書名 | 対応箇条 |
 |--------|--------|----------|
-| DOC-005 | [リスク対応計画](/isms/plans/risk-treatment-plan) | 6.1.3 |
-| DOC-006 | [情報セキュリティ目的](/isms/plans/security-objectives) | 6.2 |
-| DOC-108 | [事業継続計画](/isms/plans/business-continuity-plan) | A.5.30 |
+| DOC-005 | [リスク対応計画](/isms/plans/risk-treatment-plan) | [6.1.3](/requirements/6-1-3) |
+| DOC-006 | [情報セキュリティ目的](/isms/plans/security-objectives) | [6.2](/requirements/#6-2) |
+| DOC-108 | [事業継続計画](/isms/plans/business-continuity-plan) | [A.5.30](/controls/#a-5-30) |
 
 ### 台帳・一覧
 
 | 文書ID | 文書名 | 対応箇条/管理策 |
 |--------|--------|-----------------|
-| DOC-101 | [情報資産台帳](/isms/registers/asset-inventory) | A.5.9 |
-| DOC-301 | [リスク台帳](/isms/registers/risk-register) | 6.1.2 |
-| DOC-104 | [法的・規制要求事項一覧](/isms/registers/legal-requirements) | A.5.31 |
+| DOC-101 | [情報資産台帳](/isms/registers/asset-inventory) | [A.5.9](/controls/#a-5-9) |
+| DOC-301 | [リスク台帳](/isms/registers/risk-register) | [6.1.2](/requirements/6-1-2) |
+| DOC-104 | [法的・規制要求事項一覧](/isms/registers/legal-requirements) | [A.5.31](/controls/#a-5-31) |
 
 ## 必須記録テンプレート
 
@@ -75,13 +75,13 @@ ISMS 運用で作成・保持が必要な記録です。
 
 | 記録ID | 記録名 | 対応箇条/管理策 |
 |--------|--------|-----------------|
-| REC-001 | [教育訓練記録](/isms/records/training-record) | 7.2 |
-| REC-002 | [リスクアセスメント報告書](/isms/records/risk-assessment-report) | 6.1.2, 8.2 |
-| REC-004 | [監視・測定記録](/isms/records/monitoring-measurement-record) | 9.1 |
-| REC-005 | [内部監査報告書](/isms/records/internal-audit-report) | 9.2 |
-| REC-006 | [マネジメントレビュー議事録](/isms/records/management-review-minutes) | 9.3 |
-| REC-007 | [是正処置記録](/isms/records/corrective-action-record) | 10.2 |
-| REC-102 | [インシデント報告書](/isms/records/incident-report) | A.5.24 |
+| REC-001 | [教育訓練記録](/isms/records/training-record) | [7.2](/requirements/#7-2) |
+| REC-002 | [リスクアセスメント報告書](/isms/records/risk-assessment-report) | [6.1.2](/requirements/6-1-2), [8.2](/requirements/#8-2) |
+| REC-004 | [監視・測定記録](/isms/records/monitoring-measurement-record) | [9.1](/requirements/#9-1) |
+| REC-005 | [内部監査報告書](/isms/records/internal-audit-report) | [9.2](/requirements/9-2) |
+| REC-006 | [マネジメントレビュー議事録](/isms/records/management-review-minutes) | [9.3](/requirements/9-3) |
+| REC-007 | [是正処置記録](/isms/records/corrective-action-record) | [10.2](/requirements/#10-2) |
+| REC-102 | [インシデント報告書](/isms/records/incident-report) | [A.5.24](/controls/#a-5-24) |
 
 ## ディレクトリ構造
 
