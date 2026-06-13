@@ -19,7 +19,11 @@ isms/
 │   ├── information-security-policy.md
 │   ├── acceptable-use-policy.md
 │   ├── access-control-policy.md
-│   └── supplier-security-policy.md
+│   ├── supplier-security-policy.md
+│   └── technical-security-policy.md
+├── guidelines/               # ガイドライン
+│   ├── employee-security-guideline.md
+│   └── engineer-security-guideline.md
 ├── procedures/               # 手順書
 │   ├── risk-assessment-procedure.md
 │   ├── incident-response-procedure.md
@@ -112,6 +116,7 @@ Git を使用して文書のバージョン管理を行います。
 | 情報の許容される利用方針 | `policies/acceptable-use-policy.md` | A.5.10 |
 | アクセス制御方針 | `policies/access-control-policy.md` | A.5.15 |
 | サプライヤー管理方針 | `policies/supplier-security-policy.md` | A.5.19-A.5.22 |
+| 技術的セキュリティ方針 | `policies/technical-security-policy.md` | A.8.7-A.8.32 |
 | インシデント対応手順 | `procedures/incident-response-procedure.md` | A.5.24, A.5.26 |
 | 内部監査手順 | `procedures/internal-audit-procedure.md` | 9.2 |
 | 是正処置手順 | `procedures/corrective-action-procedure.md` | 10.2 |
@@ -120,6 +125,13 @@ Git を使用して文書のバージョン管理を行います。
 | リスク台帳 | `registers/risk-register.md` | 6.1.2 |
 | 法的・規制要求事項一覧 | `registers/legal-requirements.md` | A.5.31 |
 | インシデント報告書 | `records/incident-report.md` | A.5.24 |
+
+### ガイドライン
+
+| 文書名 | ファイル | 対象者 |
+|--------|----------|--------|
+| 従業員向けセキュリティガイドライン | `guidelines/employee-security-guideline.md` | 全従業員 |
+| エンジニア向けセキュリティガイドライン | `guidelines/engineer-security-guideline.md` | 開発者・運用者 |
 
 ## 注意事項
 
