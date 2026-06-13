@@ -196,8 +196,13 @@ export default withMermaid(
               { text: 'A.7.2 物理的入退', link: '/controls/a-7-2' },
               { text: 'A.7.3 オフィス・施設のセキュリティ', link: '/controls/a-7-3' },
               { text: 'A.7.4 物理的セキュリティの監視', link: '/controls/a-7-4' },
+              { text: 'A.7.5 物理的・環境的脅威からの保護', link: '/controls/a-7-5' },
               { text: 'A.7.6 セキュリティ領域での作業', link: '/controls/a-7-6' },
+              { text: 'A.7.7 クリアデスクとクリアスクリーン', link: '/controls/a-7-7' },
               { text: 'A.7.8 装置の設置及び保護', link: '/controls/a-7-8' },
+              { text: 'A.7.9 構外にある資産のセキュリティ', link: '/controls/a-7-9' },
+              { text: 'A.7.10 記憶媒体', link: '/controls/a-7-10' },
+              { text: 'A.7.11 サポートユーティリティ', link: '/controls/a-7-11' },
               { text: 'A.7.12 ケーブル配線のセキュリティ', link: '/controls/a-7-12' },
               { text: 'A.7.13 装置の保守', link: '/controls/a-7-13' },
               { text: 'A.7.14 装置の処分又は再利用', link: '/controls/a-7-14' }
